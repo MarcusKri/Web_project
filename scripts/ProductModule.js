@@ -1,44 +1,45 @@
-const pizzaModule= (function(){
-    const meny = [
+const ProductModule = ( function(){
+
+    const products = [
         {
             vare: "Spicy meatballs",
-            pris: 849,
+            pris: 149,
             kategori: "Pizza",
             bilde: "bilde.jpg"
         },
         {
             vare: "Fresh pineapple",
-            pris: 299,
+            pris: 199,
             kategori: "Pizza",
             bilde: "bilde.jpg"
         },
         {
             vare: "Chill beef",
-            pris: 1099,
+            pris: 299,
             kategori: "Pizza",
             bilde: "bilde.jpg"
         },
         {
             vare: "Calzone",
-            pris: 799,
+            pris: 129,
             kategori: "Calzone",
             bilde: "bilde.jpg"
         },
         {
             vare: "Kebabpizza",
-            pris: 899,
+            pris: 299,
             kategori: "Pizza",
             bilde: "bilde.jpg"
         },
         {
             vare: "Double pepperoni",
-            pris: 699,
+            pris: 199,
             kategori: "Pizza",
             bilde: "bilde.jpg"
         },
         {
             vare: "Mexicana",
-            pris: 999,
+            pris: 319,
             kategori: "Pizza",
             bilde: "bilde.jpg"
         },
@@ -46,36 +47,32 @@ const pizzaModule= (function(){
             vare: "Cola",
             pris: 40,
             kategori: "brus",
-            bilde: "bilde.jpg"
+            bilde: "soda.jpg"
         },
         {
             vare: "Fanta",
             pris: 40,
             kategori: "brus",
-            bilde: "bilde.jpg"
+            bilde: "soda.jpg"
         },
         {
             vare: "Pepsi Max",
             pris: 40,
             kategori: "brus",
-            bilde: "bilde.jpg"
+            bilde: "soda.jpg"
         },
         {
             vare: "Sprite",
             pris: 40,
             kategori: "brus",
-            bilde: "bilde.jpg"
-        },
+            bilde: "soda.jpg"
+        }
     ];
 
-    const getAll = () => meny;
+    const getAllProducts = () => products;
 
-    const getByCategory = ( kategori ) => meny.filter( course => course.kategori.toLowerCase() === toLowerCase() );
+    return { getAllProducts } 
 
-    return {
-        getAll,
-        getByCategory
-    }
-}())
+}() ); // end Module
 
-export default pizzaModule;
+export default ProductModule;

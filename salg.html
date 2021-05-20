@@ -3,16 +3,74 @@
 <head> 
     <title>Salg</title>
     <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 </head>
 <body>
+     <!-- NAV -->
+     <nav class="navbar has-shadow navbar is-fixed-top" style="background-color: #fff8cd;">
+        <!--LOGO-->
+        <div class="navbar-brand">
+            <a href="index.html" class="navbar-item">
+                <img src="images/pizzaLogo.png" alt="logo" class="is-rounded p-0">
+                <div class="navbar-item is-size-4">
+                    <h2 class="has-text-weight-bold">Gyldne Pizza</h2>
+                </div>
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
 
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end is-size-5 is-dark">
+                <a href="meny.html" class="navbar-item">Meny</a>
+                <a href="salg.html" class="navbar-item">Salg</a>
+                <a href="restaurant.html" class="navbar-item">Resturantene</a>
+                <a href="ansatte.html" class="navbar-item">Ansatte</a>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
     <label for="Kvittering">Velg varer</label>
     <select name="velgVarer" id="velgVarer"></select>
     <input type="button" onclick="printReceipt()"/>
     <p id="output"></p>
 
+
+    <!--Marcus-->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-1-gapless">
+            <div class="column is-2.4" id="1">
+            </div>
+            <div class="column is-2.4" id="2">
+            </div>
+            <div class="column is-2.4" id="3">
+            </div>
+            <div class="column is-2.4" id="4">
+            </div>
+            <div class="column is-2.4" id="5">
+            </div>                   
+        </div>
+    </section>
+    <!--Marcus ferdig-->
+    
+
     <script>
-        var meny = [
+        // mobil meny
+    const bIcon = document.querySelector("#burger");
+    const navMenu = document.querySelector("#nav-links");
+    // event listener
+    bIcon.addEventListener('click', () => {
+        navMenu.classList.toggle('is-active');
+    });
+       
+    var meny = [
             {
                 vare: "Spicy meatballs",
                 pris: 849
@@ -42,17 +100,32 @@
                 pris: 999
             }
         ]
-
+        var j = 0
         function printReceipt(){
-            localStorage.setItem("pizza", 3);
-            console.log(localStorage.getItem("pizza"));
-            for (let i = 0; i < meny.length; i++) {
-                output.innerHTML+=`Vare:`+ meny[i].vare + `Pris:`+ meny[i].pris;
+            localStorage.setItem("varer", JSON.stringify(meny));
+            var storedNames = JSON.parse(localStorage.getItem("varer"));
+            console.log(storedNames);
+            var total = 0;
+            
+            j = j+1;
+                if(j == 6){
+                    j=1
+                };
+            
+            for (let i = 0; i < storedNames.length; i++) {
+                total = total + storedNames[i].pris;
+                console.log(total);
+                console.log(j);
+                
+                document.getElementById(j).innerHTML+= "<p>"+ storedNames[i].vare + `: `+ storedNames[i].pris + "</p><br>";
+                
+
+                
                 
             }
-            
-
+            document.getElementById(j).innerHTML+= "<strong>"+`Subtotal: ` + total + "</strong><br><br><br><br><br>"
         };
+        
     </script>
 </body>
 </html>

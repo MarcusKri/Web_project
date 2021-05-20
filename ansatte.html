@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- NAV -->
-    <nav class="navbar has-shadow" style="background-color: #fff8cd;">
+    <nav class="navbar has-shadow navbar is-fixed-top" style="background-color: #fff8cd;">
         <!--LOGO-->
         <div class="navbar-brand">
             <a href="index.html" class="navbar-item">
@@ -30,12 +30,51 @@
             <div class="navbar-end">
                 <a href="meny.html" class="navbar-item">Meny</a>
                 <a href="salg.html" class="navbar-item">Salg</a>
-                <a href="restaurant.html" class="navbar-item">Resturantene</a>
+                <a href="restaurant.html" class="navbar-item">Restaurantene</a>
                 <a href="ansatte.html" class="navbar-item">Ansatte</a>
             </div>
         </div>
     </nav>
+    <div class="Section">
+        <div class="Filter">
+            
+        </div>
+        <p id="resultat"></p>
+    </div>
+    
     <script>
+    // ansatte array
+    var ansatte = [
+        {Bilde:"<img src=images/lauritz.jpg width=150>", Navn:"Lauritz", Stilling:"Restaurant Sjef", Restaurant:"Majorstua"},
+        {Bilde:"<img src=images/kasper.jpg width=150>", Navn:"Kasper", Stilling:"Restaurant Sjef",  Restaurant:"Grünerløkka"},
+        {Bilde:"<img src=images/julian.jpg width=150>", Navn:"Julian", Stilling:"Restaurant Sjef", Restaurant:"Helsfyr"},
+        {Bilde:"<img src=images/henrik.jpg width=150>", Navn:"Henrik", Stilling:"Restaurant Sjef", Restaurant:"Aker Brygge"},
+        {Bilde:"<img src=images/marcus.jpg width=150>", Navn:"Marcus", Stilling:"Servitør", Restaurant:"Majorstua"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Jonas", Stilling:"Servitør", Restaurant:"Grünerløkka"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Thea", Stilling:"Servitør", Restaurant:"Majorstua"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Helene", Stilling:"Servitør", Restaurant:"Grünerløkka"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Kaja", Stilling:"Servitør", Restaurant:"Helsfyr"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Ella", Stilling:"Servitør", Restaurant:"Helsfyr"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Eivind", Stilling:"Servitør", Restaurant:"Aker Brygge"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Brage", Stilling:"Servitør", Restaurant:"Aker Brygge"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Martin", Stilling:"Servitør", Restaurant:"Helsfyr"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Sara", Stilling:"Kjøkkenarbeider", Restaurant:"Helsfyr"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Lea", Stilling:"Kjøkkenarbeider", Restaurant:"Aker Brygge"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Ole", Stilling:"Kjøkkenarbeider", Restaurant:"Majorstua"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Vita", Stilling:"Kjøkkenarbeider", Restaurant:"Grünerløkka"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Anton", Stilling:"Kjøkkenarbeider", Restaurant:"Helsfyr"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Jonathan", Stilling:"Kjøkkenarbeider", Restaurant:"Aker Brygge"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Ahmed", Stilling:"Kjøkkenarbeider", Restaurant:"Majorstua"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Mads", Stilling:"Kjøkkenarbeider", Restaurant:"Grünerløkka"},
+    ]
+    // Funksjon for å printe ut alle ansatte
+    
+        for (i = 0; i < ansatte.length; i++) {
+                resultat.innerHTML +=`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
+            }
+    
+    
+        
     // mobil meny
     const bIcon = document.querySelector("#burger");
     const navMenu = document.querySelector("#nav-links");
