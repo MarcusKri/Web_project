@@ -3,57 +3,68 @@ const pizzaModule= (function(){
         {
             vare: "Spicy meatballs",
             pris: 849,
-            kategori: "Pizza"
+            kategori: "Pizza",
+            bilde: "bilde.jpg"
         },
         {
             vare: "Fresh pineapple",
             pris: 299,
-            kategori: "Pizza"
+            kategori: "Pizza",
+            bilde: "bilde.jpg"
         },
         {
             vare: "Chill beef",
             pris: 1099,
-            kategori: "Pizza"
+            kategori: "Pizza",
+            bilde: "bilde.jpg"
         },
         {
             vare: "Calzone",
             pris: 799,
-            kategori: "Calzone"
+            kategori: "Calzone",
+            bilde: "bilde.jpg"
         },
         {
             vare: "Kebabpizza",
             pris: 899,
-            kategori: "Pizza"
+            kategori: "Pizza",
+            bilde: "bilde.jpg"
         },
         {
             vare: "Double pepperoni",
             pris: 699,
-            kategori: "Pizza"
+            kategori: "Pizza",
+            bilde: "bilde.jpg"
         },
         {
             vare: "Mexicana",
             pris: 999,
-            kategori: "pizza"
+            kategori: "Pizza",
+            bilde: "bilde.jpg"
         },
         {
             vare: "Cola",
             pris: 40,
-            kategori: "brus"
+            kategori: "brus",
+            bilde: "bilde.jpg"
         },
         {
             vare: "Fanta",
             pris: 40,
-            kategori: "brus"
+            kategori: "brus",
+            bilde: "bilde.jpg"
         },
         {
             vare: "Pepsi Max",
             pris: 40,
-            kategori: "brus"
+            kategori: "brus",
+            bilde: "bilde.jpg"
         },
         {
             vare: "Sprite",
             pris: 40,
-            kategori: "brus"
+            kategori: "brus",
+            bilde: "bilde.jpg"
         },
     ];
 

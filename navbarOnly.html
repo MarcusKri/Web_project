@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <title>navbar</title>
+    <script type="module" src="scripts/hamburgerMenu.js"></script>
 </head>
 <body>
     <!-- NAV -->
@@ -13,7 +14,7 @@
         <!--LOGO-->
         <div class="navbar-brand">
             <a href="index.html" class="navbar-item">
-                <img src="pizzaLogo.png" alt="logo" class="is-rounded p-0">
+                <img src="images/pizzaLogo.png" alt="logo" class="is-rounded p-0">
                 <div class="navbar-item is-size-4">
                     <h2 class="has-text-weight-bold">Gyldne Pizza</h2>
                 </div>
@@ -34,15 +35,5 @@
             </div>
         </div>
     </nav>
-   
-    <script>
-    // mobil meny
-    const bIcon = document.querySelector("#burger");
-    const navMenu = document.querySelector("#nav-links");
-    // event listener
-    bIcon.addEventListener('click', () => {
-        navMenu.classList.toggle('is-active');
-    });
-    </script>
 </body>
 </html>
