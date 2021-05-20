@@ -1,0 +1,7 @@
+body {
+    background-color: #ffcb91;
+}
+
+#imgBox:hover{
+    background-color: bisque;
+}
