@@ -6,54 +6,121 @@
     <title>Resturantes</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="resturante.css"/>
 </head>
 <body>
+           <!-- NAV -->
+    <nav class="navbar" style="background-color: #fff8cd;">
+        <!--LOGO-->
+        <div class="navbar-brand">
+            <a href="index.html" class="navbar-item">
+                <img src="pizzaLogo.png" alt="logo" class="is-rounded p-0">
+                <div class="navbar-item">
+                    <h2>Gyldne Pizza</h2>
+                </div>
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a href="meny.html" class="navbar-item">Meny</a>
+                <a href="salg.html" class="navbar-item">Salg</a>
+                <a href="restaurant.html" class="navbar-item">Resturantene</a>
+                <a href="ansatte.html" class="navbar-item">Ansatte</a>
+            </div>
+        </div>
+    </nav>
 
     <div class="container">      
 
         <main>
-
-            <nav class="navbar has-shadow" style="background-color: #fff8cd;">
-                <!--LOGO-->
-                <div class="navbar-brand">
-                    <a href="index.html" class="navbar-item">
-                        <img src="pizzaLogo.png" alt="logo" class="is-rounded p-0">
-                        <div class="navbar-item">
-                            <h2>Gyldne Pizza</h2>
-                        </div>
-                    </a>
-                    <a class="navbar-burger" id="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
-                </div>
-        
-                <div class="navbar-menu" id="nav-links">
-                    <div class="navbar-end">
-                        <a href="meny.html" class="navbar-item">Hjem</a>
-                        <a href="salg.html" class="navbar-item">Meny</a>
-                        <a href="restaurant.html" class="navbar-item">Salg</a>
-                        <a href="ansatte.html" class="navbar-item">Ansatte</a>
-                    </div>
-                </div>
-            </nav>
-            <script>
-            // mobil meny
-            const bIcon = document.querySelector("#burger");
-            const navMenu = document.querySelector("#nav-links");
-            // event listener
-            bIcon.addEventListener('click', () => {
-                navMenu.classList.toggle('is-active');
-            });
-            </script>
-
-                <h1 class="is-size-1 has-text-centered">Resturantes</h1>
-
                 <!--Jalla-->
                 <section class="section">
 
-                    <!--Bilde 1 og 2-->
+                    <!--Bilde 1, adresse og tekst-->
+                    <div class="container">
+                        <div class="columns is-vcentered">
+                            <div class="column is-2">
+                                <h1 class="is-size-2 title">Frogner</h1>
+                                <h2 class="is-size-4 subtitle">Bygdøy allé 18</h2>           
+                            </div>
+                            <div class="column is-6" id="imgBox">
+                                    <img class="image is-fullwidth image is-rounded" src="images/pizzaResturant1.jpg">
+                            </div>
+                            <div class="column is-4 ">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam officia aut possimus placeat ducimus tempore id minima sequi repellendus, similique aperiam in quibusdam accusantium nobis recusandae consequuntur facilis porro odit ad iusto laborum expedita. Quos pariatur, aliquid eveniet eum ea obcaecati, eius repellat magni iure eaque iusto molestias ratione dicta.</p>
+                        </div>
+                    </div>
+
+                     <!--Bilde 2, adresse og tekst-->
+                     <div class="container">
+                        <div class="columns is-vcentered">
+                            <div class="column is-2">
+                                <h1 class="is-size-2 title">Aker Brygge</h1>
+                                <h2 class="is-size-4 subtitle">Dokkveien 72</h2>           
+                            </div>
+                            <div class="column is-6 has-text-centered">
+                                <img class="image is-fullwidth image is-rounded" src="images/pizzaResturant2.jpg">
+                            </div>
+                            <div class="column is-4 ">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam officia aut possimus placeat ducimus tempore id minima sequi repellendus, similique aperiam in quibusdam accusantium nobis recusandae consequuntur facilis porro odit ad iusto laborum expedita. Quos pariatur, aliquid eveniet eum ea obcaecati, eius repellat magni iure eaque iusto molestias ratione dicta.</p>
+                        </div>
+                    </div>
+
+                     <!--Bilde 1, adresse og tekst-->
+                     <div class="container">
+                        <div class="columns is-vcentered">
+                            <div class="column is-2">
+                                <h1 class="is-size-2 title">Helsfyr</h1>
+                                <h2 class="is-size-4 subtitle">Strømsveien 4</h2>           
+                            </div>
+                            <div class="column is-6 has-text-centered">
+                                <img class="image is-fullwidth image is-rounded" src="images/pizzaResturant3.jpg">
+                            </div>
+                            <div class="column is-4 ">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam officia aut possimus placeat ducimus tempore id minima sequi repellendus, similique aperiam in quibusdam accusantium nobis recusandae consequuntur facilis porro odit ad iusto laborum expedita. Quos pariatur, aliquid eveniet eum ea obcaecati, eius repellat magni iure eaque iusto molestias ratione dicta.</p>
+                        </div>
+                    </div>
+
+                     <!--Bilde 1, adresse og tekst-->
+                     <div class="container">
+                        <div class="columns is-vcentered">
+                            <div class="column is-2">
+                                <h1 class="is-size-2 title">Sørenga</h1>
+                                <h2 class="is-size-4 subtitle">Sørengkaia 12</h2>           
+                            </div>
+                            <div class="column is-6 has-text-centered">
+                                <img class="image is-fullwidth image is-rounded" src="images/pizzaResturant4.jpg">
+                            </div>
+                            <div class="column is-4">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam officia aut possimus placeat ducimus tempore id minima sequi repellendus, similique aperiam in quibusdam accusantium nobis recusandae consequuntur facilis porro odit ad iusto laborum expedita. Quos pariatur, aliquid eveniet eum ea obcaecati, eius repellat magni iure eaque iusto molestias ratione dicta.</p>
+                        </div>
+                    </div>
+
+                    <script>
+                        // mobil meny
+                        const bIcon = document.querySelector("#burger");
+                        const navMenu = document.querySelector("#nav-links");
+                        // event listener
+                        bIcon.addEventListener('click', () => {
+                            navMenu.classList.toggle('is-active');
+                        });
+                        </script>
+
+
+
+
+
+
+
+
+
+                    <!--
                     <div class="container">
                         <div class="columns is-1-gapless">
                             <div class="column is-6 has-text-centered">
@@ -64,7 +131,7 @@
                         </div>
                     </div>
 
-                    <!--Tekst til bilde 1 og 2-->
+                   
                     <div class="container">
                         <div class="columns is-1-gapless">
                             <div class="column is-6">
@@ -77,7 +144,7 @@
                         </div>
                     </div>
 
-                    <!--Bilde 3 og 4-->
+ 
                     <div class="container">
                         <div class="columns">
                             <div class="column is-6">
@@ -88,7 +155,7 @@
                         </div>
                     </div>
 
-                     <!--Tekst til bilde 3 og 4-->
+     
                      <div class="container">
                         <div class="columns">
                             <div class="column is-6">
@@ -102,8 +169,8 @@
                     </div>
 
                 </section>
-                <!--Jalla End 12 column-is-12 -->
-
+            
+            -->
 
                 
 
