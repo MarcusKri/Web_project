@@ -5,14 +5,11 @@
     <meta charset="utf-8">
 </head>
 <body>
-    <h1>Våre salg</h1>
-    <p>Kvittering</p>
-    <p>1 stor kyllingpizza: 1499kr</p>
-    <p>2 små mozell: 50kr</p>
-    <p>Hvitløksbaguette: 25kr</p>
+
     <label for="Kvittering">Velg varer</label>
     <select name="velgVarer" id="velgVarer"></select>
-    <input type="button" onclick="printReceipt">Legg til</input>
+    <input type="button" onclick="printReceipt()"/>
+    <p id="output"></p>
 
     <script>
         var meny = [
@@ -47,8 +44,13 @@
         ]
 
         function printReceipt(){
-            console.log("hei")
-            document.getElementById("")
+            localStorage.setItem("pizza", 3);
+            console.log(localStorage.getItem("pizza"));
+            for (let i = 0; i < meny.length; i++) {
+                output.innerHTML+=`Vare:`+ meny[i].vare + `Pris:`+ meny[i].pris;
+                
+            }
+            
 
         };
     </script>
