@@ -9,13 +9,13 @@
 </head>
 <body>
     <!-- NAV -->
-    <nav class="navbar has-shadow" style="background-color: #fff8cd;">
+    <nav class="navbar has-shadow navbar is-fixed-top" style="background-color: #fff8cd;">
         <!--LOGO-->
         <div class="navbar-brand">
             <a href="index.html" class="navbar-item">
                 <img src="pizzaLogo.png" alt="logo" class="is-rounded p-0">
-                <div class="navbar-item">
-                    <h2>Gyldne Pizza</h2>
+                <div class="navbar-item is-size-4">
+                    <h2 class="has-text-weight-bold">Gyldne Pizza</h2>
                 </div>
             </a>
             <a class="navbar-burger" id="burger">
@@ -26,7 +26,7 @@
         </div>
 
         <div class="navbar-menu" id="nav-links">
-            <div class="navbar-end">
+            <div class="navbar-end is-size-5 is-dark">
                 <a href="meny.html" class="navbar-item">Meny</a>
                 <a href="salg.html" class="navbar-item">Salg</a>
                 <a href="restaurant.html" class="navbar-item">Resturantene</a>
@@ -34,6 +34,7 @@
             </div>
         </div>
     </nav>
+   
     <script>
     // mobil meny
     const bIcon = document.querySelector("#burger");

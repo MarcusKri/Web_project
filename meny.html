@@ -8,6 +8,44 @@
     <title>Meny</title>
 </head>
 <body>
+    <body>
+        <!-- NAV -->
+        <nav class="navbar has-shadow" style="background-color: #fff8cd;">
+            <!--LOGO-->
+            <div class="navbar-brand">
+                <a href="index.html" class="navbar-item">
+                    <img src="pizzaLogo.png" alt="logo" class="is-rounded p-0">
+                    <div class="navbar-item">
+                        <h2>Gyldne Pizza</h2>
+                    </div>
+                </a>
+                <a class="navbar-burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
     
+            <div class="navbar-menu" id="nav-links">
+                <div class="navbar-end">
+                    <a href="meny.html" class="navbar-item">Meny</a>
+                    <a href="salg.html" class="navbar-item">Salg</a>
+                    <a href="restaurant.html" class="navbar-item">Resturantene</a>
+                    <a href="ansatte.html" class="navbar-item">Ansatte</a>
+                </div>
+            </div>
+        </nav>
+
+        .
+
+        <script>
+        // mobil meny
+        const bIcon = document.querySelector("#burger");
+        const navMenu = document.querySelector("#nav-links");
+        // event listener
+        bIcon.addEventListener('click', () => {
+            navMenu.classList.toggle('is-active');
+        });
+        </script>
 </body>
 </html>
