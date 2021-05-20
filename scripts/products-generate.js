@@ -13,6 +13,7 @@ ProductModule.getAllProducts().forEach( product => {
                 <section class="card-content">
                     <h3 has-font-weight-bold>${ product.vare }</h3>
                     <p>Pris: ${ product.pris }kr</p>
+                    <button class="button is-success mt-3">Bestill</button>
                 </section>
             </div>
         </article>
