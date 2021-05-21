@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies</title>
+    <title>Meny</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <script defer type="module" src="scripts/products-generate.js"></script>
+    <link rel="shortcut icon" type="image/jpg" href="images/pizzaLogo.png"/>
+    <script type="module" src="scripts/hamburgerMenu.js"></script>
+    <link rel="stylesheet" href="css/menyStyleSheet.css">
 </head>
 <body>
     
     <!-- NAV -->
-    <nav class="navbar has-shadow navbar is-fixed-top" style="background-color: #fff8cd;">
+    <nav class="navbar has-shadow navbar is-fixed-top" style="background-color: #ff9642;">
         <!--LOGO-->
         <div class="navbar-brand">
             <a href="index.html" class="navbar-item">
@@ -21,13 +24,14 @@
                     <h2 class="has-text-weight-bold">Gyldne Pizza</h2>
                 </div>
             </a>
+            <!--HAMBURGER MENU-->
             <a class="navbar-burger" id="burger">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
         </div>
-
+        <!--LINKS-->
         <div class="navbar-menu" id="nav-links">
             <div class="navbar-end is-size-5 is-dark">
                 <a href="meny.html" class="navbar-item">Meny</a>
@@ -38,21 +42,31 @@
         </div>
     </nav>
 
-    <div class="container pt-6">
+    <!--PADDING-->
+    <div class="pt-6">
         <div class="pt-5"></div>
     </div>
 
     <!-- MAIN -->
 
-    <h2 class="is-size-1 has-text-centered" style="letter-spacing: 0.3em;">MENY</h2>
+    <h2 class="is-size-1 has-text-centered has-text-weight-bold" style="letter-spacing: 0.3em; ">MENY</h2>
 
     <div class="container pt-5">
         <main>
-            <section id="products-section" class="columns is-multiline">
+            <h2 class="is-size-3 has-text-centered pt-2 pb-5" style="letter-spacing: 0.6em;">PIZZA</h2>
+            <section id="products-section" class="columns is-multiline"></section>
 
-            </section>
+            <h2 class="is-size-3 has-text-centered pt-2 pb-5" style="letter-spacing: 0.6em;">DRINKS</h2>
+            <section id="products-section-drinks" class="columns is-multiline"></section>
         </main>
     </div>
 
+    <!--FOOTER-->
+    <footer class="footer mt-5">
+        <div class="content has-text-centered">
+            <p style="font-weight: bold;">Copyright 2021 - Webprosjekt</p>
+            <p style="font-weight: bold;">The source code is <a href="#">licenced</a> by RA ND OM</p>
+        </div>
+    </footer>
 </body>
 </html>
