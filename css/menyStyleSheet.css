@@ -1,1 +1,9 @@
- 
+ body{
+     background-color: #fff8cd;
+ }
+ .footer{
+     background-color: #ffe05d;
+ }
+ h1,h2,h3,h4,h5,h6, p{
+     color: #646464;
+ }
