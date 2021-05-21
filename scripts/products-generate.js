@@ -12,7 +12,7 @@ ProductModule.getAllProducts().forEach( product => {
                     <img src="images/meny-produkter/${ product.bilde }" width="500px">
                 </section>
                 <section class="card-content">
-                    <h3 has-font-weight-bold>${ product.vare }</h3>
+                    <h3 class="has-text-weight-semibold">${ product.vare }</h3>
                     <p>Pris: ${ product.pris }kr</p>
                     <button class="button is-success mt-3">Bestill</button>
                 </section>
@@ -30,7 +30,7 @@ ProductModule.getAllDrinks().forEach( drinks => {
                     <img src="images/meny-produkter/${ drinks.bilde }" width="500px">
                 </section>
                 <section class="card-content">
-                    <h3 has-font-weight-bold>${ drinks.vare }</h3>
+                    <h3 class="has-text-weight-semibold">${ drinks.vare }</h3>
                     <p>Pris: ${ drinks.pris }kr</p>
                     <button class="button is-success mt-3">Bestill</button>
                 </section>

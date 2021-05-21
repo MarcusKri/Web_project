@@ -1,8 +1,9 @@
  body{
      background-color: #fff8cd;
  }
- .footer{
+.footer{
      background-color: #ffe05d;
+     background-image: url(../images/pizzaLogo.png);
  }
  h1,h2,h3,h4,h5,h6, p{
      color: #646464;
