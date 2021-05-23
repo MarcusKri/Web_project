@@ -23,3 +23,5 @@ modalBg.addEventListener('click', ( e ) => {
 closeModal.addEventListener('click', ( e ) => {
   modal.classList.remove('is-active');
 })
+
+//slideshow
