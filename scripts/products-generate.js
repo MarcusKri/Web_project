@@ -14,7 +14,7 @@ ProductModule.getAllProducts().forEach( product => {
                 <section class="card-content">
                     <h3 class="has-text-weight-semibold">${ product.vare }</h3>
                     <p>Pris: ${ product.pris }kr</p>
-                    <button class="button is-success mt-3" onclick="placeOrder()">Bestill</button>
+                    <button class="button is-success mt-3" onclick="myStoageFunction()">Bestill</button>
                 </section>
             </div>
         </article>
@@ -32,10 +32,16 @@ ProductModule.getAllDrinks().forEach( drinks => {
                 <section class="card-content">
                     <h3 class="has-text-weight-semibold">${ drinks.vare }</h3>
                     <p>Pris: ${ drinks.pris }kr</p>
-                    <button class="button is-success mt-3" onclick="placeOrderDrinks()">Bestill</button>
+                    <button class="button is-success mt-3" onclick="myStorageFunction()">Bestill</button>
                 </section>
             </div>
         </article>
+        
+        <script>
+        function myStorageFunction(){
+        const localStorage.setItem('${drinks.vare}' + '${drinks.pris}');
+        }
+        </script>
     `;
 } );
 
