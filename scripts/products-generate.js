@@ -6,7 +6,6 @@ const productsSectionDrinks = document.querySelector("#products-section-drinks")
 
 let htmlTxt = "";
 ProductModule.getAllProducts().forEach( product => { 
-    k = k+1;
     htmlTxt += `
         <article class="column is-4">
             <div class="card">
@@ -38,13 +37,8 @@ ProductModule.getAllDrinks().forEach( drinks => {
                 </section>
             </div>
         </article>
-        
-
     `;
 } );
-
-
-
 
 productsSection.innerHTML = htmlTxt;
 productsSectionDrinks.innerHTML = htmlTxt2;
