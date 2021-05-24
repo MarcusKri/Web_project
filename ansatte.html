@@ -5,42 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
     <title>Ansatte i gyldne pizza</title>
 </head>
-<body>
+<body style="background-color: #646464;">
     <!-- NAV -->
-    <nav class="navbar has-shadow navbar is-fixed-top" style="background-color: #fff8cd;">
+    <nav class="navbar has-shadow navbar is-fixed-top" style="background-color: #ff9642;">
         <!--LOGO-->
         <div class="navbar-brand">
             <a href="index.html" class="navbar-item">
-                <img src="pizzaLogo.png" alt="logo" class="is-rounded p-0">
-                <div class="navbar-item">
-                    <h2>Gyldne Pizza</h2>
+                <img src="images/pizzaLogo.png" alt="logo" class="is-rounded p-0">
+                <div class="navbar-item is-size-4">
+                    <h2 class="has-text-weight-bold">Gyldne Pizza</h2>
                 </div>
             </a>
+            <!--HAMBURGER MENU-->
             <a class="navbar-burger" id="burger">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
         </div>
-
+        <!--LINKS-->
         <div class="navbar-menu" id="nav-links">
-            <div class="navbar-end">
+            <div class="navbar-end is-size-5 is-dark">
                 <a href="meny.html" class="navbar-item">Meny</a>
                 <a href="salg.html" class="navbar-item">Salg</a>
-                <a href="restaurant.html" class="navbar-item">Restaurantene</a>
+                <a href="resturantene.html" class="navbar-item">Resturantene</a>
                 <a href="ansatte.html" class="navbar-item">Ansatte</a>
             </div>
         </div>
     </nav>
+    <!--PADDING-->
+    <div class="pt-6">
+        <div class="pt-5"></div>
+    </div>
+    <!--END NAV-->
+    
+
     <div class="Section">
         <div class="Filter">
+    <div class="container pt-6">
+        <div class="pt-5"></div>
+    </div>
+    <section class="Section mt-*-4" style="background-color: #646464;">
+        <div class="Container" style="background-color: #ffe05d;" >
+            <h2 class="is-size-1 has-text-centered" style="letter-spacing: 0.3em;">Ansatte</h2>
             
+            <div class="field">
+                <label class="label">Hva heter den ansatte</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Navn til ansatte" id="ansattNavn">
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Restaurant</label>
+                <div class="control">
+                  <div class="select">
+                    <select id="restaurant-input">
+                      <option value="Majorstua">Majorstua</option>
+                      <option value="Frogner">Frogner</option>
+                      <option value="AkerBrygge">Aker Brygge</option>
+                      <option value="Helsfyr">Helsfyr</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Stilling</label>
+                <div class="control">
+                  <div class="select">
+                    <select id="stilling-input">
+                        <option value="Sjef">RestaurantSjef</option>
+                        <option value="Servitor">Servitør</option>
+                        <option value="kjokkenarbeider">Kjøkkenarbeider</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            <div class="control">
+                <button class="button is-link">Søk</button>
+              </div>
+              
         </div>
         <p id="resultat"></p>
-    </div>
+    </section>
     
     <script>
     // ansatte array
@@ -68,11 +120,11 @@
         {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Mads", Stilling:"Kjøkkenarbeider", Restaurant:"Grünerløkka"},
     ]
     // Funksjon for å printe ut alle ansatte
-    
-        for (i = 0; i < ansatte.length; i++) {
-                resultat.innerHTML +=`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
-            }
-    
+         
+            for (i = 0; i < ansatte.length; i++) {
+                    resultat.innerHTML +=`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
+                }
+        
     
         
     // mobil meny
