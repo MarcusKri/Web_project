@@ -35,15 +35,13 @@ body {
     border-style: solid;
     border-color: #ff9642;
     background-size: 100% 100%;
-    transition-timing-function: ease-in-out;
-    transition: 0.4;
+    transition: 0.8s;
 }
 
 #imgBox:hover {
     background: url("../images/pizzaResturantInterior1.jpg") no-repeat;
     background-size: 100% 100%;
-    transition-timing-function:linear;
-    transition: 0.4s;
+    transition: 0.8s;
 }
 
 
@@ -52,13 +50,14 @@ body {
     background-size: 100% 100%;
     border-style: solid;
     border-color: #ff9642;
-    transition: 0.4s;
+    transition: 0.8s;
 
     
 }
 #imgBox2:hover {
     background: url("../images/pizzaResturantInterior2.jpeg") no-repeat;
     background-size: 100% 100%;
+    transition: 0.8s;
 }
 
 #imgBox3 {
@@ -66,12 +65,12 @@ body {
     border-style: solid;
     border-color: #ff9642;
     background-size: 100% 100%;
-    transition: 0.4s;
+    transition: 0.8s;
 }
 #imgBox3:hover {
     background: url("../images/pizzaResturantInterior3.jpg") no-repeat;
     background-size: 100% 100%;
-    transition: 0.4s;
+    transition: 0.8s;
 }
 
 #imgBox4 {
@@ -79,7 +78,7 @@ body {
     border-style: solid;
     border-color: #ff9642;
     background-size: 100% 100%;
-    transition: 0.4s;
+    transition: 0.8s;
     
 }
 #imgBox4:hover {
