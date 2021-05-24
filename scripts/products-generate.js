@@ -34,16 +34,12 @@ ProductModule.getAllDrinks().forEach( drinks => {
                 <section class="card-content">
                     <h3 class="has-text-weight-semibold">${ drinks.vare }</h3>
                     <p>Pris: ${ drinks.pris }kr</p>
-                    <button class="button is-success mt-3" onclick="myStorageFunction()">Bestill</button>
+                    <button class="button is-success mt-3" onclick="">Bestill</button>
                 </section>
             </div>
         </article>
         
-        <script>
-        function myStorageFunction(){
-        const localStorage.setItem('${drinks.vare}' + '${drinks.pris}');
-        }
-        </script>
+
     `;
 } );
 
@@ -52,10 +48,3 @@ ProductModule.getAllDrinks().forEach( drinks => {
 
 productsSection.innerHTML = htmlTxt;
 productsSectionDrinks.innerHTML = htmlTxt2;
-
-/* ID?
-var distinct = []
-for (var i = 0; i < array.length; i++)
-   if (array[i].age not in distinct)
-      distinct.push(array[i].age)
-*/
