@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 </head>
 <body>
-     <!-- NAV -->
-     <nav class="navbar has-shadow navbar is-fixed-top" style="background-color: #fff8cd;">
+    <!-- NAV -->
+    <nav class="navbar has-shadow navbar is-fixed-top" style="background-color: #ff9642;">
         <!--LOGO-->
         <div class="navbar-brand">
             <a href="index.html" class="navbar-item">
@@ -19,18 +19,19 @@
                     <h2 class="has-text-weight-bold">Gyldne Pizza</h2>
                 </div>
             </a>
+            <!--HAMBURGER MENU-->
             <a class="navbar-burger" id="burger">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
         </div>
-
+        <!--LINKS-->
         <div class="navbar-menu" id="nav-links">
             <div class="navbar-end is-size-5 is-dark">
                 <a href="meny.html" class="navbar-item">Meny</a>
                 <a href="salg.html" class="navbar-item">Salg</a>
-                <a href="restaurant.html" class="navbar-item">Resturantene</a>
+                <a href="resturantene.html" class="navbar-item">Resturantene</a>
                 <a href="ansatte.html" class="navbar-item">Ansatte</a>
             </div>
         </div>
@@ -39,6 +40,7 @@
     <label for="Kvittering">Velg varer</label>
     <select name="velgVarer" id="velgVarer"></select>
     <input type="button" onclick="printReceipt()"/>
+    <input type="button" onclick="allStorage()"/>
     <p id="output"></p>
 
 
@@ -59,6 +61,9 @@
         </div>
     </section>
     <!--Marcus ferdig-->
+
+
+    
     
 
     <script>
@@ -69,7 +74,7 @@
     bIcon.addEventListener('click', () => {
         navMenu.classList.toggle('is-active');
     });
-       
+    var menyLite = ["Spicy meatballs","Fresh pineapple","Chill beef"]
     var meny = [
             {
                 vare: "Spicy meatballs",
@@ -102,7 +107,7 @@
         ]
         var j = 0
         function printReceipt(){
-            localStorage.setItem("varer", JSON.stringify(meny));
+            localStorage.setItem("varer", JSON.stringify(menyLite));
             var storedNames = JSON.parse(localStorage.getItem("varer"));
             console.log(storedNames);
             var total = 0;
@@ -124,6 +129,32 @@
                 
             }
             document.getElementById(j).innerHTML+= "<strong>"+`Subtotal: ` + total + "</strong><br><br><br><br><br>"
+        };
+        
+
+
+        function allStorage() {
+            
+
+            for (let i = 0; i < 100; i++) {
+                j = j+1;
+                if(j == 6){
+                    j=1
+                };
+                localStorage.setItem(i, JSON.stringify(menyLite))
+                var varerLite = JSON.parse(localStorage.getItem(i));
+                for (let k = 0; k < varerLite.length; k++) {
+                    var h = menyLite.indexOf(varerLite[k])
+                   console.log(h)
+                    //console.log(meny[h].vare)
+                   document.getElementById(j).innerHTML+= "<p>"+ meny[k].vare + "</p><br>";
+                    
+                }
+
+               // document.getElementById(j).innerHTML+= "<p>"+  + `: `+ storedNames[i].pris + "</p><br>";
+                
+            }
+
         };
         
     </script>

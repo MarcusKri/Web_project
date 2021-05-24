@@ -3,6 +3,7 @@ import ProductModule from './ProductModule.js'
 const productsSection = document.querySelector("#products-section");
 const productsSectionDrinks = document.querySelector("#products-section-drinks");
 
+
 let htmlTxt = "";
 ProductModule.getAllProducts().forEach( product => { 
     htmlTxt += `
@@ -14,7 +15,7 @@ ProductModule.getAllProducts().forEach( product => {
                 <section class="card-content">
                     <h3 class="has-text-weight-semibold">${ product.vare }</h3>
                     <p>Pris: ${ product.pris }kr</p>
-                    <button class="button is-success mt-3">Bestill</button>
+                    <button class="button is-success mt-3" onclick="myStoageFunction()">Bestill</button>
                 </section>
             </div>
         </article>
@@ -32,7 +33,7 @@ ProductModule.getAllDrinks().forEach( drinks => {
                 <section class="card-content">
                     <h3 class="has-text-weight-semibold">${ drinks.vare }</h3>
                     <p>Pris: ${ drinks.pris }kr</p>
-                    <button class="button is-success mt-3">Bestill</button>
+                    <button class="button is-success mt-3" onclick="">Bestill</button>
                 </section>
             </div>
         </article>
