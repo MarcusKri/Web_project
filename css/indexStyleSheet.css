@@ -1,3 +1,21 @@
 body{
     background-color: #fff8cd;
 }   
+.fader {
+    animation-name: fadeAnimation;
+    animation-duration: 2s;
+}
+  
+@keyframes fadeAnimation {
+    0% {opacity: 0.5} 
+    50% {opacity: 1}
+}
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+.footer{
+    background-color: #ffe05d;
+    background-image: url(../images/pizzaLogo.png);
+}

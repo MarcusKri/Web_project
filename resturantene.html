@@ -5,30 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resturantes</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="resturante.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">   
+    <link rel="stylesheet" type="text/css" href="css/resturantene.css"/>
 </head>
 <body>
-    <!-- NAV -->
-    <nav class="navbar has-shadow navbar is-fixed-top" style="background-color: #ff9642;">
+           <!-- NAV -->
+    <nav class="navbar" style="background-color: #ff9642;">
         <!--LOGO-->
         <div class="navbar-brand">
             <a href="index.html" class="navbar-item">
                 <img src="images/pizzaLogo.png" alt="logo" class="is-rounded p-0">
-                <div class="navbar-item is-size-4">
-                    <h2 class="has-text-weight-bold">Gyldne Pizza</h2>
+                <div class="navbar-item">
+                    <h2>Gyldne Pizza</h2>
                 </div>
             </a>
-            <!--HAMBURGER MENU-->
             <a class="navbar-burger" id="burger">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
         </div>
-        <!--LINKS-->
+
         <div class="navbar-menu" id="nav-links">
-            <div class="navbar-end is-size-5 is-dark">
+            <div class="navbar-end">
                 <a href="meny.html" class="navbar-item">Meny</a>
                 <a href="salg.html" class="navbar-item">Salg</a>
                 <a href="resturantene.html" class="navbar-item">Resturantene</a>
@@ -36,77 +35,115 @@
             </div>
         </div>
     </nav>
-    <!--PADDING-->
-    <div class="pt-6">
-        <div class="pt-5"></div>
-    </div>
-    <!--END NAV-->
-    
+
     <div class="container">      
 
         <main>
                 <!--Jalla-->
-                <section class="section">
-
-                    <!--Bilde 1, adresse og tekst-->
+                 <!--Bilde 1, adresse og tekst-->
+                <section id="section1" class="section p-10">
                     <div class="container">
                         <div class="columns is-vcentered">
                             <div class="column is-2">
-                                <h1 class="is-size-2 title">Frogner</h1>
+                                <h1 class="is-size-1 title">Oslo</h1>
+                                <h2 class="is-size-2 subtitle">Frogner</h1>
                                 <h2 class="is-size-4 subtitle">Bygdøy allé 18</h2>           
                             </div>
                             <div class="column is-6" id="imgBox">
                                 <div id="imgcontent"></div>
                             </div>
                             <div class="column is-4 ">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam officia aut possimus placeat ducimus tempore id minima sequi repellendus, similique aperiam in quibusdam accusantium nobis recusandae consequuntur facilis porro odit ad iusto laborum expedita. Quos pariatur, aliquid eveniet eum ea obcaecati, eius repellat magni iure eaque iusto molestias ratione dicta.</p>
-                        </div>
+                                <h1 class="is-size-4 title">Modern and luxury pizza restaurant at Frogner</h1>
+                                <p>Gyldne Pizza is established in Norway in 1997, and have now 4 restaurants in Oslo.
+                                Our first restaurant is the one that the picture shows. 
+                                If you want a inside look of the restaurant you can easily hover over the image. 
+                                Moreover we have three floors inside, and one floor on the top that is our luxury rooftop. 
+                                It is not only the best pizza in town we have, we also use our third floor as a nightclub that serves pizza and drinks when it is nighttime.
+                                </p>
+                            </div>
+                        </div>    
                     </div>
+                </section>
 
                      <!--Bilde 2, adresse og tekst-->
-                     <div class="container">
-                        <div class="columns is-vcentered">
-                            <div class="column is-2">
-                                <h1 class="is-size-2 title">Aker Brygge</h1>
-                                <h2 class="is-size-4 subtitle">Dokkveien 72</h2>           
-                            </div>
-                            <div class="column is-6" id="imgBox2">
-                                <div id="imgcontent"></div>
-                            </div>
-                            <div class="column is-4 ">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam officia aut possimus placeat ducimus tempore id minima sequi repellendus, similique aperiam in quibusdam accusantium nobis recusandae consequuntur facilis porro odit ad iusto laborum expedita. Quos pariatur, aliquid eveniet eum ea obcaecati, eius repellat magni iure eaque iusto molestias ratione dicta.</p>
+                     <section id="section2" class="section p-10">
+                        <div class="container">
+                            <div class="columns is-vcentered">
+                                <div class="column is-2">
+                                    <h1 class="is-size-1 title">Oslo</h1>
+                                    <h1 class="is-size-2 subtitle">Aker Brygge</h1>
+                                    <h2 class="is-size-4 subtitle">Dokkveien 72</h2>           
+                                </div>
+                                <div class="column is-6" id="imgBox2">
+                                    <div id="imgcontent"></div>
+                                </div>
+                                <div class="column is-4 ">
+                                    <h1 class="is-size-4 title">Family friendly and chill pizza restaurant at Aker Brygge </h1>
+                                    <p>A family friendly pizza restaurant near the ocean in the beatiful place Aker Brygge. 
+                                        Take a look inside by hovering over the image. We also have a playground outside for childrens, 
+                                        and a outside lounge we serve of course our pizza, drinks and a warm coffee. 
+                                    </p>
+                                </div>
+                            </div>    
                         </div>
-                    </div>
+                    </section>
 
                      <!--Bilde 3, adresse og tekst-->
+                     <section id="section3" class="section p-10">
                      <div class="container">
                         <div class="columns is-vcentered">
                             <div class="column is-2">
-                                <h1 class="is-size-2 title">Helsfyr</h1>
+                                <h1 class="is-size-1 title">Oslo</h1>
+                                <h1 class="is-size-2 subtitle">Helsfyr</h1>
                                 <h2 class="is-size-4 subtitle">Strømsveien 4</h2>           
                             </div>
                             <div class="column is-6" id="imgBox3">
                                 <div id="imgcontent"></div>
                             </div>
                             <div class="column is-4 ">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam officia aut possimus placeat ducimus tempore id minima sequi repellendus, similique aperiam in quibusdam accusantium nobis recusandae consequuntur facilis porro odit ad iusto laborum expedita. Quos pariatur, aliquid eveniet eum ea obcaecati, eius repellat magni iure eaque iusto molestias ratione dicta.</p>
+                                <h1 class="is-size-4 title">Peaceful and calmingly restaurant at Helsfyr</h1>
+                                <p>Welcome to a vibe so peaceful you want to sleep afterward you have ate a pizza. This is our first restaurant with hotel rooms. 
+                                    <br>You can reserve a hotelroom at: GyldnePizzaHotels.no 
+                                    <br>Hover over the image to see the inside of the restaurant!
+                                </p>
+                        </div>
                         </div>
                     </div>
+                </section>
 
                      <!--Bilde 4, adresse og tekst-->
-                     <div class="container">
-                        <div class="columns is-vcentered">
-                            <div class="column is-2">
-                                <h1 class="is-size-2 title">Sørenga</h1>
-                                <h2 class="is-size-4 subtitle">Sørengkaia 12</h2>           
-                            </div>
+                     <section id="section4" class="section p-10">
+                        <div class="container">
+                            <div class="columns is-vcentered">
+                                <div class="column is-2">
+                                    <h1 class="is-size-1 title">Oslo</h1>
+                                    <h1 class="is-size-2 subtitle">Sørenga</h1>
+                                    <h2 class="is-size-4 subtitle">Sørengkaia 12</h2>           
+                                </div>
                             <div class="column is-6" id="imgBox4">
                                 <div id="imgcontent"></div>
                             </div>
                             <div class="column is-4">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam officia aut possimus placeat ducimus tempore id minima sequi repellendus, similique aperiam in quibusdam accusantium nobis recusandae consequuntur facilis porro odit ad iusto laborum expedita. Quos pariatur, aliquid eveniet eum ea obcaecati, eius repellat magni iure eaque iusto molestias ratione dicta.</p>
+                                <h1 class="is-size-4 title">Luxury restaurant with topfloor inside with amazing view</h1>
+                                <p> Welcome to a restaurant with four floors. 
+                                    The number on floor is a lounge and the three others are restaurants. 
+                                    We have specialized us on pizza in different countries and are always improving. Therefore as each days goes the pizza gets better and better.
+                                    <br>Hover over the image to see the top floor restaurant.
+                                </p>
+                            </div>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+            </main>
+            </div>
+
+                                    <!--FOOTER-->
+                    <footer class="footer mt-5">
+                        <div class="content has-text-centered">
+                            <p style="font-weight: bold;">Copyright 2021 - Webprosjekt</p>
+                            <p style="font-weight: bold;">The source code is <a href="#">licenced</a> by RA ND OM</p>
+                        </div>
+                    </footer>
 
                     <script>
                         // mobil meny
@@ -117,151 +154,5 @@
                             navMenu.classList.toggle('is-active');
                         });
                         </script>
-
-
-
-
-
-
-
-
-
-                    <!--
-                    <div class="container">
-                        <div class="columns is-1-gapless">
-                            <div class="column is-6 has-text-centered">
-                                <img class="image is-fullwidth image is-rounded" src="images/pizzaResturant1.jpg">
-                            </div>
-                            <div class="column is-6 ">
-                                <img class="image is-fullwidth image is-rounded" src="images/pizzaResturant2.jpg"></div>
-                        </div>
-                    </div>
-
-                   
-                    <div class="container">
-                        <div class="columns is-1-gapless">
-                            <div class="column is-6">
-                                <h1 class="is-size-2">Oslo</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati doloremque aperiam culpa nihil omnis beatae corporis. Voluptas, eos repellat voluptate iste dolore soluta nobis ea maiores sunt eaque officia!</p>
-                            </div>
-                            <div class="column is-6">
-                                <h1 class="is-size-2">Oslo2</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati doloremque aperiam culpa nihil omnis beatae corporis. Voluptas, eos repellat voluptate iste dolore soluta nobis ea maiores sunt eaque officia!</p>
-                        </div>
-                    </div>
-
-<<<<<<< HEAD
- 
-=======
-                 
->>>>>>> bd75c433cf933fe2a59904d93acb570a6ad86f34
-                    <div class="container">
-                        <div class="columns">
-                            <div class="column is-6">
-                                <img class="image is-fullwidth image is-rounded" src="images/pizzaResturant3.jpg">
-                            </div>
-                            <div class="column is-6">
-                                <img class="image is-fullwidth image is-rounded" src="images/pizzaResturant4.jpg"></div>
-                        </div>
-                    </div>
-
-     
-                     <div class="container">
-                        <div class="columns">
-                            <div class="column is-6">
-                                <h1 class="is-size-2">Oslo3</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati doloremque aperiam culpa nihil omnis beatae corporis. Voluptas, eos repellat voluptate iste dolore soluta nobis ea maiores sunt eaque officia!</p>
-                            </div>
-                            <div class="column is-6">
-                                <h1 class="is-size-2">Oslo4</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati doloremque aperiam culpa nihil omnis beatae corporis. Voluptas, eos repellat voluptate iste dolore soluta nobis ea maiores sunt eaque officia!</p>
-                        </div>
-                    </div>
-
-                </section>
-            
-            -->
-
-                
-
-
-
-        <!--
-            <section class="columns is-multiline">
-            
-                <article class="column is-6 mb-2">
-
-                    <div class="columns is-multiline">
-
-                        <div class="column is-8-desktop">                            
-                            <img class="image is-fullwidth image is-rounded" src="images/pizzaResturant1.jpg">
-                        </div>
-
-                        <div class="column is-4-desktop">
-                            <h3 class="is-size-1">Oslo 1</h3>
-                            <p>Velkommen til Oslo blablabla</p>
-                        </div>
-
-                    </div>
-                    
-                </article>
-
-                <article class="column is-8">
-
-                    <div class="columns is-multiline">
-
-                        <div class="column is-8">                            
-                            <img class="image is-fullwidth image is-rounded" src="images/pizzaResturant2.jpg">
-                        </div>
-
-                        <div class="column is-4">
-                            <h3 class="is-size-1">Oslo 2</h3>
-                            <p>Velkommen til nyåpnede resturanten i Bergen blabla.</p>
-                        </div>
-
-                    </div>
-
-                </article>
-                
-                <article class="column is-8">
-
-                    <div class="columns is-multiline">
-                        
-                        <div class="column is-8">                            
-                            <img class="image is-fullwidth image is-rounded" src="images/pizzaResturant3.jpg">
-                        </div>
-
-                        <div class="column is-4">
-                            <h3 class="is-size-1">Oslo 3</h3>
-                            <p>Salten kommer fra Stavanger blablabla</p>
-                        </div>                       
-
-                    </div>
-
-                </article>        
-
-                <article class="column is-8">
-
-                    <div class="columns is-multiline">
-
-                        <div class="column is-8-desktop">                            
-                            <img class="image is-fullwidth image is-rounded" src="images/pizzaResturant4.jpg">
-                        </div>
-
-                        <div class="column is-4-desktop">
-                            <h3 class="is-size-1">Oslo 4</h3>
-                            <p>Kristiansand er en by blabla</p>
-                        </div>
-
-                    </div>
-                    
-                </article>
-
-            </section>            
-
-        </main>
-
-    </div>
-    -->
 </body>
 </html>
