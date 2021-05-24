@@ -1,0 +1,97 @@
+body {
+    background-color: #ffe05d;
+}
+
+#section1 {
+    border-style: solid;
+    border-color: #ff9642;
+    background-color: #fff8cd;
+    margin: 20px;
+}
+
+#section2 {
+    border-style: solid;
+    border-color: #ff9642;
+    background-color: #fff8cd;
+    margin: 20px;
+}
+
+#section3 {
+    border-style: solid;
+    border-color: #ff9642;
+    background-color: #fff8cd;
+    margin: 20px;
+}
+
+#section4{
+    border-style: solid;
+    border-color: #ff9642;
+    background-color: #fff8cd;
+    margin: 20px;
+}
+
+#imgBox {
+    background: url("../images/pizzaResturantExterior1.jpg") no-repeat;  
+    border-style: solid;
+    border-color: #ff9642;
+    background-size: 100% 100%;
+    transition: 0.8s;
+}
+
+#imgBox:hover {
+    background: url("../images/pizzaResturantInterior1.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: 0.8s;
+}
+
+
+#imgBox2 {
+    background: url("../images/pizzaResturantExterior2.jpeg") no-repeat;
+    background-size: 100% 100%;
+    border-style: solid;
+    border-color: #ff9642;
+    transition: 0.8s;
+
+    
+}
+#imgBox2:hover {
+    background: url("../images/pizzaResturantInterior2.jpeg") no-repeat;
+    background-size: 100% 100%;
+    transition: 0.8s;
+}
+
+#imgBox3 {
+    background: url("../images/pizzaResturantExterior3.jpg") no-repeat;
+    border-style: solid;
+    border-color: #ff9642;
+    background-size: 100% 100%;
+    transition: 0.8s;
+}
+#imgBox3:hover {
+    background: url("../images/pizzaResturantInterior3.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: 0.8s;
+}
+
+#imgBox4 {
+    background: url("../images/pizzaResturantExterior4.jpg") no-repeat;
+    border-style: solid;
+    border-color: #ff9642;
+    background-size: 100% 100%;
+    transition: 0.8s;
+    
+}
+#imgBox4:hover {
+    background: url("../images/pizzaResturantInterior4.jpg") no-repeat;
+    background-size: 100% 100%;
+    transition: 0.8s;
+}
+#imgcontent {
+    width: 3rem;
+    height: 340px;
+}
+
+.footer{
+    background-color: #ffe05d;
+    background-image: url(../images/pizzaLogo.png);
+}
