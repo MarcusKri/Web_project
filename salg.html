@@ -39,6 +39,7 @@
     <label for="Kvittering">Velg varer</label>
     <select name="velgVarer" id="velgVarer"></select>
     <input type="button" onclick="printReceipt()"/>
+    <input type="button" onclick="allStorage()"/>
     <p id="output"></p>
 
 
@@ -59,6 +60,9 @@
         </div>
     </section>
     <!--Marcus ferdig-->
+
+
+    
     
 
     <script>
@@ -69,7 +73,7 @@
     bIcon.addEventListener('click', () => {
         navMenu.classList.toggle('is-active');
     });
-       
+    var menyLite = ["Spicy meatballs","Fresh pineapple","Chill beef"]
     var meny = [
             {
                 vare: "Spicy meatballs",
@@ -102,7 +106,7 @@
         ]
         var j = 0
         function printReceipt(){
-            localStorage.setItem("varer", JSON.stringify(meny));
+            localStorage.setItem("varer", JSON.stringify(menyLite));
             var storedNames = JSON.parse(localStorage.getItem("varer"));
             console.log(storedNames);
             var total = 0;
@@ -124,6 +128,32 @@
                 
             }
             document.getElementById(j).innerHTML+= "<strong>"+`Subtotal: ` + total + "</strong><br><br><br><br><br>"
+        };
+        
+
+
+        function allStorage() {
+            
+
+            for (let i = 0; i < 100; i++) {
+                j = j+1;
+                if(j == 6){
+                    j=1
+                };
+                localStorage.setItem(i, JSON.stringify(menyLite))
+                var varerLite = JSON.parse(localStorage.getItem(i));
+                for (let k = 0; k < varerLite.length; k++) {
+                    var h = menyLite.indexOf(varerLite[k])
+                   console.log(h)
+                    //console.log(meny[h].vare)
+                   document.getElementById(j).innerHTML+= "<p>"+ meny[k].vare + "</p><br>";
+                    
+                }
+
+               // document.getElementById(j).innerHTML+= "<p>"+  + `: `+ storedNames[i].pris + "</p><br>";
+                
+            }
+
         };
         
     </script>
