@@ -11,7 +11,7 @@
 </head>
 <body style="background-color: #646464;">
     <!-- NAV -->
-    <nav class="navbar has-shadow navbar is-fixed-top" style="background-color: #fff8cd;">
+    <nav class="navbar has-shadow navbar is-fixed-top" style="background-color: #ff9642;">
         <!--LOGO-->
         <div class="navbar-brand">
             <a href="index.html" class="navbar-item">
@@ -39,7 +39,7 @@
     <div class="container pt-6">
         <div class="pt-5"></div>
     </div>
-    <section class="Section mt-*-4" style="background-color: #646464;">
+    <section class="Section mt-*-4" style="background-color: #fff8cd;">
         <div class="Container" style="background-color: #ffe05d;" >
             <h2 class="is-size-1 has-text-centered" style="letter-spacing: 0.3em;">Ansatte</h2>
             
@@ -55,7 +55,8 @@
                 <div class="control">
                   <div class="select">
                     <select id="restaurant-input">
-                      <option value="Majorstua">Majorstua</option>
+                      <option value="">Velg restaurant</option>
+                      <option value="Sorenga">Sørenga</option>
                       <option value="Frogner">Frogner</option>
                       <option value="AkerBrygge">Aker Brygge</option>
                       <option value="Helsfyr">Helsfyr</option>
@@ -69,15 +70,16 @@
                 <div class="control">
                   <div class="select">
                     <select id="stilling-input">
-                        <option value="Sjef">RestaurantSjef</option>
+                      <option value="">Velg stilling</option>
+                        <option value="Restaurant Sjef">RestaurantSjef</option>
                         <option value="Servitor">Servitør</option>
-                        <option value="kjokkenarbeider">Kjøkkenarbeider</option>
+                        <option value="Kjøkkenarbeider">Kjøkkenarbeider</option>
                     </select>
                   </div>
                 </div>
               </div>
             <div class="control">
-                <button class="button is-link">Søk</button>
+                <button class="button is-link" id="sok" onclick="filtrerAnsatte()">Søk</button>
               </div>
               
         </div>
@@ -87,35 +89,72 @@
     <script>
     // ansatte array
     var ansatte = [
-        {Bilde:"<img src=images/lauritz.jpg width=150>", Navn:"Lauritz", Stilling:"Restaurant Sjef", Restaurant:"Majorstua"},
-        {Bilde:"<img src=images/kasper.jpg width=150>", Navn:"Kasper", Stilling:"Restaurant Sjef",  Restaurant:"Grünerløkka"},
+        {Bilde:"<img src=images/lauritz.jpg width=150>", Navn:"Lauritz", Stilling:"Restaurant Sjef", Restaurant:"Sorenga"},
+        {Bilde:"<img src=images/kasper.jpg width=150>", Navn:"Kasper", Stilling:"Restaurant Sjef",  Restaurant:"Frogner"},
         {Bilde:"<img src=images/julian.jpg width=150>", Navn:"Julian", Stilling:"Restaurant Sjef", Restaurant:"Helsfyr"},
-        {Bilde:"<img src=images/henrik.jpg width=150>", Navn:"Henrik", Stilling:"Restaurant Sjef", Restaurant:"Aker Brygge"},
-        {Bilde:"<img src=images/marcus.jpg width=150>", Navn:"Marcus", Stilling:"Servitør", Restaurant:"Majorstua"},
-        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Jonas", Stilling:"Servitør", Restaurant:"Grünerløkka"},
-        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Thea", Stilling:"Servitør", Restaurant:"Majorstua"},
-        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Helene", Stilling:"Servitør", Restaurant:"Grünerløkka"},
-        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Kaja", Stilling:"Servitør", Restaurant:"Helsfyr"},
-        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Ella", Stilling:"Servitør", Restaurant:"Helsfyr"},
-        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Eivind", Stilling:"Servitør", Restaurant:"Aker Brygge"},
-        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Brage", Stilling:"Servitør", Restaurant:"Aker Brygge"},
-        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Martin", Stilling:"Servitør", Restaurant:"Helsfyr"},
+        {Bilde:"<img src=images/henrik.jpg width=150>", Navn:"Henrik", Stilling:"Restaurant Sjef", Restaurant:"AkerBrygge"},
+        {Bilde:"<img src=images/marcus.jpg width=150>", Navn:"Marcus", Stilling:"Servitor", Restaurant:"Sorenga"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Jonas", Stilling:"Servitor", Restaurant:"Frogner"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Thea", Stilling:"Servitor", Restaurant:"Sorenga"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Helene", Stilling:"Servitor", Restaurant:"Frogner"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Kaja", Stilling:"Servitor", Restaurant:"Helsfyr"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Ella", Stilling:"Servitor", Restaurant:"Helsfyr"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Eivind", Stilling:"Servitor", Restaurant:"AkerBrygge"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Brage", Stilling:"Servitor", Restaurant:"AkerBrygge"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Martin", Stilling:"Servitor", Restaurant:"Helsfyr"},
         {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Sara", Stilling:"Kjøkkenarbeider", Restaurant:"Helsfyr"},
-        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Lea", Stilling:"Kjøkkenarbeider", Restaurant:"Aker Brygge"},
-        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Ole", Stilling:"Kjøkkenarbeider", Restaurant:"Majorstua"},
-        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Vita", Stilling:"Kjøkkenarbeider", Restaurant:"Grünerløkka"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Lea", Stilling:"Kjøkkenarbeider", Restaurant:"AkerBrygge"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Ole", Stilling:"Kjøkkenarbeider", Restaurant:"Sorenga"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Vita", Stilling:"Kjøkkenarbeider", Restaurant:"Frogner"},
         {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Anton", Stilling:"Kjøkkenarbeider", Restaurant:"Helsfyr"},
-        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Jonathan", Stilling:"Kjøkkenarbeider", Restaurant:"Aker Brygge"},
-        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Ahmed", Stilling:"Kjøkkenarbeider", Restaurant:"Majorstua"},
-        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Mads", Stilling:"Kjøkkenarbeider", Restaurant:"Grünerløkka"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Jonathan", Stilling:"Kjøkkenarbeider", Restaurant:"AkerBrygge"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Ahmed", Stilling:"Kjøkkenarbeider", Restaurant:"Sorenga"},
+        {Bilde:"<img src=images/unknown.jpg width=150>", Navn:"Mads", Stilling:"Kjøkkenarbeider", Restaurant:"Frogner"},
     ]
     // Funksjon for å printe ut alle ansatte
          
-            for (i = 0; i < ansatte.length; i++) {
-                    resultat.innerHTML +=`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
-                }
-        
+            
     
+    // Variabler for å kunne filtrere ansatte
+    var sok = document.getElementById("sok");
+    var resultat = document.getElementById("resultat");
+
+    var navnInput = document.getElementById("ansattNavn");
+    var resInput = document.getElementById("restaurant-input");
+    var stillingInput = document.getElementById("stilling-input");
+
+    var navnVerdi = "";
+    var resVerdi = "";
+    var stillingVerdi = "";
+
+    // Funksjon for å filtrere ansatte
+    
+    function filtrerAnsatte(){
+      navnVerdi = navnInput.value;
+      resVerdi = resInput.value;
+      stillingVerdi = stillingInput.value;
+
+      for (i = 0; i < ansatte.length; i++){ 
+        if(ansatte[i].Navn == navnVerdi){
+          resultat.innerHTML +=`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
+                  
+        }
+        else if(ansatte[i].Restaurant == resVerdi){
+          resultat.innerHTML +=`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
+        }
+        else if(ansatte[i].Stilling == stillingVerdi){
+          resultat.innerHTML +=`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
+        }
+        else if(ansatte[i].Restaurant == resVerdi && ansatte[i].Stilling == stillingVerdi && ansatte[i].Navn == navnVerdi){
+          resultat.innerHTML +=`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
+        }
+        else{
+          resultat.innerHTML +=`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
+        }
+      }
+    }
+    console.log(filtrerAnsatte())
+    sok.onclick = filtrerAnsatte;
         
     // mobil meny
     const bIcon = document.querySelector("#burger");
