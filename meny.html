@@ -10,6 +10,7 @@
     <script defer type="module" src="scripts/products-generate.js"></script>
     <link rel="shortcut icon" type="image/jpg" href="images/pizzaLogo.png"/>
     <script type="module" src="scripts/hamburgerMenu.js"></script>
+    <script type="module" src="scripts/menyJS.js"></script>
     <link rel="stylesheet" href="css/menyStyleSheet.css">
 </head>
 <body>
@@ -64,6 +65,11 @@
     <!-- MAIN -->
 
     <h2 class="is-size-1 has-text-centered has-text-weight-bold" style="letter-spacing: 0.3em; ">MENY</h2>
+    <p class="has-text-centered"> - Trykk på de ulike produktene for å legge de til i bestillingen, når alle produktene er lagt til kan 
+        du trykke på "fullfør bestilling" knappen for å fullføre - 
+        <br>
+        - Dersom det er behov for å endre på innholdet i siden kan du bruke knappene nederest på siden under "endre innhold" -
+    </p>
 
     <div class="container pt-5">
         <main>
@@ -77,8 +83,45 @@
         </main>
     </div>
 
-    <div class="container pt-2">
-        <button class="button pt-2" onclick="sendData()">Bestill</button>
+    <!--FULLFØR KNAPP-->
+    <div class="container pt-6">
+        <div class="pt-2 columns is-centered">
+            <div class="column is-half">
+                <div class="card has-text-centered">
+                    <div class="card-content">
+                        <h2 class="is-size-3 has-text-weight-bold pt-4 pb-1">FERDIG?</h2>
+                        <p class="pb-4">Klikk på knappen under for å sende bestillingen videre.</p>
+                        <button class="button pt-2 is-info" onclick="sendData()">Fullfør bestilling</button>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="container pt-6">
+        <h2 class="is-size-2 has-text-weight-bold has-text-centered pb-5" style="letter-spacing: 0.3em;">ENDRE INNHOLD</h2>
+        <div class="columns is-centered">
+            <div class="card column is-3">
+                <div class="card-content has-text-centered">
+                    <h1 class="has-text-weight-semi-bold is-size-5 pb-2">Endre Produkt</h1>
+                    <button class="button is-warning pt-2" onclick="promptEndre()">Endre</button>
+                </div>
+            </div>   
+            <div class="column is-1"></div>
+            <div class="card column is-3">
+                <div class="column card-content has-text-centered">
+                    <h1 class="has-text-weight-semi-bold is-size-5 pb-2">Legg til produkt</h1>
+                    <button class="button is-success pt-2" onclick="promptAdd()">Legg til</button>
+                </div>
+            </div>  
+            <div class="column is-1"></div>
+            <div class="card column is-3">
+                <div class="column card-content has-text-centered">
+                    <h1 class="has-text-weight-semi-bold is-size-5 pb-2">Slett produkt</h1>
+                    <button class="button is-danger pt-2" onclick="promptSlett()">Slett</button>
+                </div>
+            </div>  
+        </div>
     </div>
 
     <script>
@@ -100,6 +143,21 @@
 
         }
 
+        function promptSlett(){
+            var item = prompt("Hvilke produkt ønsker du å slette?")
+            alert( item + " er slettet")
+        }
+        function promptEndre(){
+            var itemBefore = prompt("Hvilke produkt vil du endre?")
+            var itemAfter = prompt("Hva vil du endre til?")
+            alert( itemBefore + " er endret til " + itemAfter + ".")
+        }
+        function promptAdd(){
+            var item = prompt("Hvilke produkt ønsker du å legge til?")
+            var kategori = prompt("Er det drikke eller pizza?")
+            var price = prompt("Hvilke pris skal " + item + " ha.")
+            alert( item + " er lagt til i kategorien " + kategori + " og har prisen: " + price + "kr")
+        }
     </script>
 
     <!--FOOTER-->
