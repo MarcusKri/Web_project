@@ -43,12 +43,7 @@
         <div class="pt-5"></div>
     </div>
     <!--END NAV-->
-    <div class="Section">
-        <div class="Filter">
-    <div class="container pt-6">
-        <div class="pt-5"></div>
-    </div>
-    <section class="Section mt-*-4" style="background-color: #fff8cd;">
+    <section style="background-color: #fff8cd;">
         <div class="Container" style="background-color: #ffe05d;" >
             <h2 class="is-size-1 has-text-centered" style="letter-spacing: 0.3em;">Ansatte</h2>
             
@@ -58,8 +53,7 @@
                   <input class="input" type="text" placeholder="Navn til ansatte" id="ansattNavn">
                 </div>
               </div>
-
-              <div class="field">
+            <div class="field">
                 <label class="label">Restaurant</label>
                 <div class="control">
                   <div class="select">
@@ -72,9 +66,9 @@
                     </select>
                   </div>
                 </div>
-              </div>
+            </div>
 
-              <div class="field">
+            <div class="field">
                 <label class="label">Stilling</label>
                 <div class="control">
                   <div class="select">
@@ -86,10 +80,12 @@
                     </select>
                   </div>
                 </div>
-              </div>
+            </div>
             <div class="control">
                 <button class="button is-link" id="sok" onclick="filtrerAnsatte()">Søk</button>
-              </div>
+                <button class="button is-link" id="alleAnsatte" onclick="printAlleAnsatte()">Se alle ansatte</button>
+
+            </div>
               
         </div>
         <p id="resultat"></p>
@@ -128,7 +124,11 @@
         {Bilde:"<img src=images/unknown.png width=150>", Navn:"Mads", Stilling:"Kjøkkenarbeider", Restaurant:"Frogner"},
     ]
     // Funksjon for å printe ut alle ansatte
-    
+    function printAlleAnsatte(){
+      for (i = 0; i < ansatte.length; i++){ 
+        resultat.innerHTML +=`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
+      }
+    }
     
     // Variabler for å kunne filtrere ansatte
     var sok = document.getElementById("sok");
@@ -144,28 +144,26 @@
     // Funksjon for å filtrere ansatte
     
     function filtrerAnsatte(){
+      resultat.innerHTML= " ";
       navnVerdi = navnInput.value;
       resVerdi = resInput.value;
       stillingVerdi = stillingInput.value;
 
       for (i = 0; i < ansatte.length; i++){ 
-        if(ansatte[i].Navn == navnVerdi){
-          resultat.innerHTML =`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
+        if(ansatte[i].Navn === navnVerdi){
+          resultat.innerHTML +=`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
                   
         }
-        else if(ansatte[i].Restaurant == resVerdi){
-          resultat.innerHTML =`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
-        }
-        else if(ansatte[i].Stilling == stillingVerdi){
-          resultat.innerHTML =`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
-        }
-        else if(ansatte[i].Restaurant == resVerdi && ansatte[i].Stilling == stillingVerdi && ansatte[i].Navn == navnVerdi){
-          resultat.innerHTML =`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
-        }
-        else{
+        else if(ansatte[i].Restaurant === resVerdi){
           resultat.innerHTML +=`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
-
         }
+        else if(ansatte[i].Stilling === stillingVerdi){
+          resultat.innerHTML +=`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
+        }
+        else if(ansatte[i].Restaurant === resVerdi && ansatte[i].Stilling == stillingVerdi && ansatte[i].Navn == navnVerdi){
+          resultat.innerHTML +=`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
+        }
+      
       }
     }
     console.log(filtrerAnsatte())
