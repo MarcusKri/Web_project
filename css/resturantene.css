@@ -1,5 +1,5 @@
 body {
-    background-color: #ffe05d;
+    background-color: #fff8cd;
 }
 
 #activeNav {
@@ -7,30 +7,18 @@ body {
 }
 
 #section1 {
-    border-style: solid;
-    border-color: #ff9642;
-    background-color: #fff8cd;
     margin: 20px;
 }
 
 #section2 {
-    border-style: solid;
-    border-color: #ff9642;
-    background-color: #fff8cd;
     margin: 20px;
 }
 
 #section3 {
-    border-style: solid;
-    border-color: #ff9642;
-    background-color: #fff8cd;
     margin: 20px;
 }
 
 #section4{
-    border-style: solid;
-    border-color: #ff9642;
-    background-color: #fff8cd;
     margin: 20px;
 }
 
@@ -51,9 +39,9 @@ body {
 
 #imgBox2 {
     background: url("../images/pizzaResturantExterior2.jpeg") no-repeat;
-    background-size: 100% 100%;
     border-style: solid;
     border-color: #ff9642;
+    background-size: 100% 100%;
     transition: 0.8s;
 
     
