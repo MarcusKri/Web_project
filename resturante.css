@@ -2,6 +2,54 @@ body {
     background-color: #ffcb91;
 }
 
-#imgBox:hover{
-    background-color: bisque;
+
+
+#imgBox {
+    background: url("images/pizzaResturantExterior1.jpg") no-repeat;
+    background-size: cover;
+    transition: 0.8s;
+}
+#imgBox:hover {
+    background: url("images/pizzaResturantInterior1.jpg") no-repeat;
+    background-size: cover;
+    transition: 0.8s;
+}
+
+#imgBox2 {
+    background: url("images/pizzaResturantExterior2.jpg") no-repeat;
+    background-size: cover;
+    transition: 0.8s;
+    
+}
+#imgBox2:hover {
+    background: url("images/pizzaResturantInterior2.jpg") no-repeat;
+    background-size: cover;
+    transition: 0.8s;
+}
+
+#imgBox3 {
+    background: url("images/pizzaResturantExterior3.jpg") no-repeat;
+    background-size: cover;
+    transition: 0.8s;
+}
+#imgBox3:hover {
+    background: url("images/pizzaResturantInterior3.jpg") no-repeat;
+    background-size: cover;
+    transition: 0.8s;
+}
+
+#imgBox4 {
+    background: url("images/pizzaResturantExterior4.jpg") no-repeat;
+    background-size: cover;
+    transition: 0.8s;
+    
+}
+#imgBox4:hover {
+    background: url("images/pizzaResturantInterior4.jpg") no-repeat;
+    background-size: cover;
+    transition: 0.8s;
+}
+#imgcontent {
+    width: 3rem;
+    height: 340px;
 }

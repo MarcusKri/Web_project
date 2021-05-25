@@ -4,16 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza sjappen</title>
-    <title>Halla Kasper</title>
-    <p>yeeee</p>
-    <p>jaah</p>
-    <p>asidjcxvhbdjfopwdsofkcvjn bcvksdlpdsflcvk ncdnmsklwpqdslcvkm vcvdsnmklpsdclvkm vcvd smklsdlckm </p>
+    <title>Gyldne Pizza</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/pizzaLogo.png"/>  
+    <script type="module" src="scripts/hamburgerMenu.js"></script>  
+    <script type="module" src="scripts/indexJS.js"></script>
+    <link rel="stylesheet" href="css/indexStyleSheet.css">
 </head>
 <body>
-    <script>
-        console.log(localStorage.getItem("pizza"))
-    </script>
+   
+    <!-- NAV -->
+    <nav class="navbar has-shadow navbar is-fixed-top" style="background-color: #ff9642;">
+        <!--LOGO-->
+        <div class="navbar-brand">
+            <a href="index.html" class="navbar-item">
+                <img src="images/pizzaLogo.png" alt="logo" class="is-rounded p-0">
+                <div class="navbar-item is-size-4">
+                    <h2 class="has-text-weight-bold">Gyldne Pizza</h2>
+                </div>
+            </a>
+            <!--HAMBURGER MENU-->
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <!--LINKS-->
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end is-size-5 is-dark">
+                <a href="meny.html" class="navbar-item">Meny</a>
+                <a href="salg.html" class="navbar-item">Salg</a>
+                <a href="resturantene.html" class="navbar-item">Resturantene</a>
+                <a href="ansatte.html" class="navbar-item">Ansatte</a>
+            </div>
+        </div>
+    </nav>
+
     
+    <!--PADDING-->
+    <div class="pt-6">
+        <div class="pt-5"></div>
+    </div>
+    <div class="container">
+        <h2 class="is-size-1 has-text-centered has-text-weight-bold" style="letter-spacing: 0.3em; ">DEALS</h2>
+        <div>
+            <div class="columns is-centered">
+                <img class="column is-three-quarters" src="images/meny-produkter/ukens-tilbud.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+            <!--TABBED CONTENT-->
+            <div class="columns is-centered">
+                <div class="pt-5 column is-half">
+                    <div class="message">
+                        <div class="message-header" style="background-color: #ffe05d;">
+                            <p style="color: #646464;">Registrer deg i PizzaCluben for fantastiske tilbud!</p>
+                        </div>
+                        <div class="message-body has-shadow">
+                            <p>I Pizzaklubben vil du få poeng hver gang du handler + spesielle tilbud tilpasset akkurat deg.
+                                Her vil du få muligheten til å lagre adressen din slik at du slipper å skrive den inn hver gang du bestiller. 
+                                Du vi også få en valgfi pizza og brus på bursdagen din. <br><br>
+                                Klikk <a href="#">her</a> for å lese mer.
+                            </p>
+                            <div class="has-text-centered">
+                                <button class="button mt-1" id="signup">Bli med</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+                
+            <!-- MODAL -->
+            <div class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content has-background-white py-2 px-5 columns is-vcentered" >
+                    <div class="column is-vcentered">
+                        <h3 class="title mb-5">Bli med i Klubben</h3>
+                        <form action="">
+                            <div class="field">
+                                <label>Navn</label>
+                                <div class="control">
+                                    <input type="text" class="input" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>E-mail</label>
+                                <div class="control">
+                                    <input type="text" class="input" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <p>I agree to the<a href="#"> terms & conditions</a></p>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                        <button class="button is-rounded mt-5 has-text-primary" id="closeModal">Meld deg inn</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+
 </body>
 </html>
