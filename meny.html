@@ -81,8 +81,29 @@
     </div>
 
     <div class="container pt-2">
-        <button class="button pt-2" onclick="">klikk meg</button>
+        <button class="button pt-2" onclick="sendData()">Bestill</button>
     </div>
+
+    <script>
+        var shoppingCart = []
+
+        function myStoageFunction(k){
+            console.log(k);
+            
+            shoppingCart.push(k);
+            console.log(shoppingCart);
+
+        };
+        var p = -1;
+        function sendData(){
+            p = p+1;
+            localStorage.setItem(p, JSON.stringify(shoppingCart))
+            console.log(JSON.parse(localStorage.getItem(p)));
+            shoppingCart = [];
+
+        }
+
+    </script>
 
     <!--FOOTER-->
     <footer class="footer mt-5">

@@ -107,7 +107,6 @@
         ]
         var j = 0
         function printReceipt(){
-            localStorage.setItem("varer", JSON.stringify(menyLite));
             var storedNames = JSON.parse(localStorage.getItem("varer"));
             console.log(storedNames);
             var total = 0;
@@ -129,31 +128,32 @@
                 
             }
             document.getElementById(j).innerHTML+= "<strong>"+`Subtotal: ` + total + "</strong><br><br><br><br><br>"
-        };
-        
+        }; 
+
 
 
         function allStorage() {
+           
+
             
 
-            for (let i = 0; i < 100; i++) {
-                j = j+1;
-                if(j == 6){
-                    j=1
-                };
-                localStorage.setItem(i, JSON.stringify(menyLite))
-                var varerLite = JSON.parse(localStorage.getItem(i));
-                for (let k = 0; k < varerLite.length; k++) {
-                    var h = menyLite.indexOf(varerLite[k])
-                   console.log(h)
-                    //console.log(meny[h].vare)
-                   document.getElementById(j).innerHTML+= "<p>"+ meny[k].vare + "</p><br>";
+            for (let d = 0; d < localStorage.length; d++) {
+                var receipt = JSON.parse(localStorage.getItem(d));
+                for (let t = 0; t < receipt.length; t++) {
+                    console.log(receipt[t])
+                    document.getElementById(1).innerHTML+= "<p>"+ meny[receipt[t]].vare + `: `+ meny[receipt[t]].pris + "</p><br>";
                     
                 }
-
-               // document.getElementById(j).innerHTML+= "<p>"+  + `: `+ storedNames[i].pris + "</p><br>";
+                var f = meny.indexOf(receipt[d]);
+               // console.log(receipt);
+                
                 
             }
+
+
+
+
+
 
         };
         
