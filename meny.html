@@ -41,20 +41,7 @@
                 <a href="ansatte.html" class="navbar-item">Ansatte</a>
             </div>
         </a>
-        <a class="navbar-burger" id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
     </div>
-
-    <div class="navbar-menu" id="nav-links">
-        <div class="navbar-end is-size-5 is-dark">
-            <a href="meny.html" class="navbar-item">Meny</a>
-            <a href="salg.html" class="navbar-item">Salg</a>
-            <a href="restaurant.html" class="navbar-item">Resturantene</a>
-            <a href="ansatte.html" class="navbar-item">Ansatte</a>
-        </div>
     </nav>
 
     <!--PADDING-->
@@ -143,6 +130,7 @@
 
         }
 
+        /* FRONTEND PROMPTS */
         function promptSlett(){
             var item = prompt("Hvilke produkt ønsker du å slette?")
             alert( item + " er slettet")
@@ -156,7 +144,7 @@
             var item = prompt("Hvilke produkt ønsker du å legge til?")
             var kategori = prompt("Er det drikke eller pizza?")
             var price = prompt("Hvilke pris skal " + item + " ha.")
-            alert( item + " er lagt til i kategorien " + kategori + " og har prisen: " + price + "kr")
+            alert( item + " er lagt til i kategorien " + "'" + kategori + "'" + " og har prisen: " + price + "kr")
         }
     </script>
 
