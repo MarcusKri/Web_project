@@ -46,28 +46,34 @@
     <div class="pt-6">
         <div class="pt-5"></div>
     </div>
-    <div class="container">
-        <h2 class="is-size-1 has-text-centered has-text-weight-bold" style="letter-spacing: 0.3em; ">DEALS</h2>
-            <div class="">
-                <div class="slideshowContainer is-half">
-                    <div class="contentSlides fader">
+
+    <h2 class="is-size-1 has-text-centered has-text-weight-bold" style="letter-spacing: 0.3em; ">DEALS</h2>
+
+    <div class="columns is-vcentered">
+
+        <!--SLIDESHOW-->
+        <div class="container column is-5">
+            <div class="has-text-centered">
+                <h2 class="is-size-4 has-text-weight-semi-bold">VÅRE TILBUD</h2>
+            </div>
+            <div class="slideshowContainer">
+                <div class="contentSlides fader column">
                     <img src="images/meny-produkter/ukens-tilbud.jpg" style="width:100%">
-                    </div>
+                </div>
 
-                    <div class="contentSlides fader">
+                <div class="contentSlides fader column">
                     <img src="images/meny-produkter/ukens-tilbud2.jpg" style="width:100%">
-                    </div>
+                </div>
 
-                    <div class="contentSlides fader">
+                <div class="contentSlides fader column">
                     <img src="images/meny-produkter/ukens-tilbud3.jpg" style="width: 100%"   >
-                    </div>
                 </div>
             </div>
-    </div>
-    <div class="container">
-            <!--TABBED-->
-            <div class="columns is-centered">
-                <div class="pt-5 column is-half">
+        </div>
+        <div class="container column is-5">
+            <!--TAB-->
+            <div class="">
+                <div class="pt-5">
                     <div class="message">
                         <div class="message-header" style="background-color: #ffe05d;">
                             <p style="color: #646464;">Registrer deg i PizzaCluben for fantastiske tilbud!</p>
@@ -84,41 +90,43 @@
                         </div>
                     </div>
                 </div>
-             </div>
-                
-            <!-- MODAL -->
-            <div class="modal">
-                <div class="modal-background"></div>
-                <div class="modal-content has-background-white py-2 px-5 columns is-vcentered" >
-                    <div class="column is-vcentered">
-                        <h3 class="title mb-5">Bli med i Klubben</h3>
-                        <form action="">
-                            <div class="field">
-                                <label>Navn</label>
-                                <div class="control">
-                                    <input type="text" class="input" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label>E-mail</label>
-                                <div class="control">
-                                    <input type="text" class="input" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="control">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        <p>I agree to the<a href="#"> terms & conditions</a></p>
-                                    </label>
-                                </div>
-                            </div>
-                        </form>
-                        <button class="button is-rounded mt-5 has-text-primary" id="closeModal">Meld deg inn</button>
+            </div>
+        </div> 
+
+    </div>
+    <!-- MODAL -->
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white py-2 px-5 columns is-vcentered" >
+            <div class="column is-vcentered">
+                <h3 class="title mb-5">Bli med i Klubben</h3>
+                <form action="">
+                    <div class="field">
+                        <label>Navn</label>
+                        <div class="control">
+                            <input type="text" class="input" placeholder="Name">
+                        </div>
                     </div>
-                </div>
+                    <div class="field">
+                        <label>E-mail</label>
+                        <div class="control">
+                            <input type="text" class="input" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <p>I agree to the<a href="#"> terms & conditions</a></p>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                <button class="button is-rounded mt-5 has-text-primary" id="closeModal">Meld deg inn</button>
             </div>
         </div>
+    </div>
+
     <!--FOOTER-->
     <footer class="footer mt-5">
         <div class="content has-text-centered">
