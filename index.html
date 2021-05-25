@@ -35,7 +35,7 @@
             <div class="navbar-end is-size-5 is-dark">
                 <a href="meny.html" class="navbar-item">Meny</a>
                 <a href="salg.html" class="navbar-item">Salg</a>
-                <a href="resturantene.html" class="navbar-item">Resturantene</a>
+                <a href="restaurantene.html" class="navbar-item">Restaurantene</a>
                 <a href="ansatte.html" class="navbar-item">Ansatte</a>
             </div>
         </div>
@@ -50,7 +50,6 @@
     <h2 class="is-size-1 has-text-centered has-text-weight-bold" style="letter-spacing: 0.3em; ">DEALS</h2>
 
     <div class="columns is-vcentered">
-
         <!--SLIDESHOW-->
         <div class="container column is-5">
             <div class="has-text-centered">
@@ -92,7 +91,45 @@
                 </div>
             </div>
         </div> 
+    </div>
 
+    <!--Message-->
+    <div class="container" id="message">
+        <div class="columns is-centered">
+            <article class="message column is-half">
+                <div class="message-header" style="background-color: #ffe05d;">
+                    <p>Viktig informasjon</p>
+                    <button class="delete" onclick="remove()"></button>
+                </div>
+                <div class="message-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio impedit,
+                        vel esse consequatur, nesciunt labore eum perferendis quaerat cumque provident qui quam ipsum at quo, libero incidunt? 
+                        Reiciendis impedit officiis laboriosam vero itaque. Minus accusantium similique quidem adipisci 
+                        praesentium tenetur totam magni libero consequatur ut hic fugit a molestiae inventore explicabo nihil 
+                        perferendis quisquam distinctio dolor accusamus quo, nobis quas?</p>
+                </div>
+            </article>
+        </div>
+    </div>
+    <!--Message-->
+    <div class="container" id="message">
+        <div class="columns is-centered">
+            <article class="message column is-half mt-6 is-danger">
+                <div class="message-header">
+                    <p>Corona påminnelse</p>
+                    <button class="delete" onclick="remove()"></button>
+                </div>
+                <div class="message-body">
+                    <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni architecto earum quas accusamus!</b> <br><br>
+                        Exercitationem nulla labore illum asperiores architecto voluptatibus. Ut quasi minima neque commodi 
+                        beatae ullam maiores expedita ex earum, perspiciatis ad adipisci odio, optio cumque, esse illo in alias
+                        aspernatur. Tenetur, voluptatum corrupti. Temporibus illo eligendi voluptatibus placeat
+                         cupiditate magnam aliquam vel quisquam praesentium? Temporibus tempore autem similique 
+                         delectus enim, natus quia ullam molestiae perferendis qui placeat facere quae nisi aut nam 
+                         inventore rerum sit nemo ducimus. Labore.</p>
+                </div>
+            </article>
+        </div>
     </div>
     <!-- MODAL -->
     <div class="modal">
@@ -135,5 +172,13 @@
             <p style="font-weight: bold;">The source code is <a href="#">licenced</a> by RA ND OM</p>
         </div>
     </footer>
+
+    <!--SCRIPT-->
+    <script>
+        function remove(){
+            var object = document.getElementById("message");
+            object.remove();
+        }
+    </script>
 </body>
 </html>
