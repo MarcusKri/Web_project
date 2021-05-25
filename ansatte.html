@@ -128,9 +128,7 @@
         {Bilde:"<img src=images/unknown.png width=150>", Navn:"Mads", Stilling:"Kjøkkenarbeider", Restaurant:"Frogner"},
     ]
     // Funksjon for å printe ut alle ansatte
-    for (i = 0; i < ansatte.length; i++){ 
-          resultat.innerHTML =`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
-    }
+    
     
     // Variabler for å kunne filtrere ansatte
     var sok = document.getElementById("sok");
@@ -155,17 +153,18 @@
           resultat.innerHTML =`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
                   
         }
-        else if(ansatte.Restaurant == resVerdi){
+        else if(ansatte[i].Restaurant == resVerdi){
           resultat.innerHTML =`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
         }
-        else if(ansatte.Stilling == stillingVerdi){
+        else if(ansatte[i].Stilling == stillingVerdi){
           resultat.innerHTML =`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
         }
-        else if(ansatte.Restaurant == resVerdi && ansatte[i].Stilling == stillingVerdi && ansatte[i].Navn == navnVerdi){
+        else if(ansatte[i].Restaurant == resVerdi && ansatte[i].Stilling == stillingVerdi && ansatte[i].Navn == navnVerdi){
           resultat.innerHTML =`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
         }
         else{
-          return true;
+          resultat.innerHTML +=`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
+
         }
       }
     }
