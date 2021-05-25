@@ -2,6 +2,10 @@ body {
     background-color: #ffe05d;
 }
 
+#activeNav {
+    background-color: #fff8cd;
+}
+
 #section1 {
     border-style: solid;
     border-color: #ff9642;
