@@ -1,6 +1,11 @@
 body{
     background-color: #fff8cd;
 }   
+
+#activeNav {
+    background-color: #fff8cd;
+}
+
 .fader {
     animation-name: fadeAnimation;
     animation-duration: 2s;
