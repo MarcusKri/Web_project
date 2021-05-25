@@ -25,7 +25,7 @@ body {
 #imgBox {
     background: url("../images/pizzaResturantExterior1.jpg") no-repeat;  
     border-style: solid;
-    border-color: #ff9642;
+    border-color: black;
     background-size: 100% 100%;
     transition: 0.8s;
 }
@@ -39,9 +39,9 @@ body {
 
 #imgBox2 {
     background: url("../images/pizzaResturantExterior2.jpeg") no-repeat;
-    border-style: solid;
-    border-color: #ff9642;
     background-size: 100% 100%;
+    border-style: solid;
+    border-color: black;
     transition: 0.8s;
 
     
@@ -54,9 +54,9 @@ body {
 
 #imgBox3 {
     background: url("../images/pizzaResturantExterior3.jpg") no-repeat;
-    border-style: solid;
-    border-color: #ff9642;
     background-size: 100% 100%;
+    border-style: solid;
+    border-color: black;
     transition: 0.8s;
 }
 #imgBox3:hover {
@@ -67,9 +67,9 @@ body {
 
 #imgBox4 {
     background: url("../images/pizzaResturantExterior4.jpg") no-repeat;
-    border-style: solid;
-    border-color: #ff9642;
     background-size: 100% 100%;
+    border-style: solid;
+    border-color: black;
     transition: 0.8s;
     
 }
