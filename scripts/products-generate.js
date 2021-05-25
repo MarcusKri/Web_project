@@ -18,7 +18,6 @@ ProductModule.getAllProducts().forEach( product => {
                 <section class="card-content">
                     <h3 class="has-text-weight-semibold">${ product.vare }</h3>
                     <p>Pris: ${ product.pris }kr</p>
-                    <button class="button is-success mt-3" onclick="myStoageFunction()">Legg til</button>
                     <button class="button is-success mt-3" onclick="myStoageFunction(${k})">Legg til</button>
                 </section>
             </div>
@@ -38,7 +37,6 @@ ProductModule.getAllDrinks().forEach( drinks => {
                 <section class="card-content">
                     <h3 class="has-text-weight-semibold">${ drinks.vare }</h3>
                     <p>Pris: ${ drinks.pris }kr</p>
-                    <button class="button is-success mt-3" onclick="">Legg til</button>
                     <button class="button is-success mt-3" onclick="myStoageFunction(${k})">Legg til</button>
                 </section>
             </div>
