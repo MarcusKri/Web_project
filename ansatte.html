@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="css/ansatteStyleSheet.css">
-
+    <link rel="shortcut icon" type="image/jpg" href="images/pizzaLogo.png"/>  
     <title>Ansatte i gyldne pizza</title>
 </head>
 <body>
@@ -33,7 +33,7 @@
             <div class="navbar-end is-size-5 is-dark">
                 <a href="meny.html" class="navbar-item">Meny</a>
                 <a href="salg.html" class="navbar-item">Salg</a>
-                <a href="resturantene.html" class="navbar-item">Resturantene</a>
+                <a href="restaurantene.html" class="navbar-item">Restaurantene</a>
                 <a href="ansatte.html" id="activeNav" class="navbar-item">Ansatte</a>
             </div>
         </div>
@@ -43,20 +43,21 @@
         <div class="pt-5"></div>
     </div>
     <!--END NAV-->
+
     <section style="background-color: #fff8cd;">
-        <div class="Container" style="background-color: #ffe05d;" >
-            <h2 class="is-size-1 has-text-centered" style="letter-spacing: 0.3em;">Ansatte</h2>
+        <div class="Container" style="background-color: #fff8cd;" >
+            <h2 class="is-size-1 has-text-centered" style="letter-spacing: 0.2em;">Ansatte</h2>
             
             <div class="field">
                 <label class="label">Hva heter den ansatte</label>
                 <div class="control">
-                  <input class="input" type="text" placeholder="Navn til ansatte" id="ansattNavn">
+                  <input class="input is-rounded" style="width: 20%;" size="1" type="text" placeholder="Navn til ansatte" id="ansattNavn">
                 </div>
               </div>
             <div class="field">
                 <label class="label">Restaurant</label>
                 <div class="control">
-                  <div class="select">
+                  <div class="select is-rounded">
                     <select id="restaurant-input">
                       <option value="">Velg restaurant</option>
                       <option value="Sorenga">Sørenga</option>
@@ -71,7 +72,7 @@
             <div class="field">
                 <label class="label">Stilling</label>
                 <div class="control">
-                  <div class="select">
+                  <div class="select is-rounded">
                     <select id="stilling-input">
                       <option value="">Velg stilling</option>
                         <option value="RestaurantSjef">Restaurant Sjef</option>
@@ -90,6 +91,31 @@
         </div>
         <p id="resultat"></p>
     </section>
+    <div class="container pt-6">
+      <h2 class="is-size-2 has-text-weight-bold has-text-centered pb-5" style="letter-spacing: 0.3em;">ENDRE ANSATTE</h2>
+      <div class="columns is-centered">
+          <div class="card column is-3">
+              <div class="card-content has-text-centered">
+                  <h1 class="has-text-weight-semi-bold is-size-5 pb-2">REDIGER ANSATT</h1>
+                  <button class="button is-warning pt-2" onclick="promptEndreAnsatt()">Endre</button>
+              </div>
+          </div>   
+          <div class="column is-1"></div>
+          <div class="card column is-3">
+              <div class="column card-content has-text-centered">
+                  <h1 class="has-text-weight-semi-bold is-size-5 pb-2">Legg til ansatt</h1>
+                  <button class="button is-success pt-2" onclick="promptAddAnsatt()">Legg til</button>
+              </div>
+          </div>  
+          <div class="column is-1"></div>
+          <div class="card column is-3">
+              <div class="column card-content has-text-centered">
+                  <h1 class="has-text-weight-semi-bold is-size-5 pb-2">Slett ansatt</h1>
+                  <button class="button is-danger pt-2" onclick="promptSlettAnsatt()">Slett</button>
+              </div>
+          </div>  
+      </div>
+  </div>
     <!--FOOTER-->
     <footer class="footer mt-5">
       <div class="content has-text-centered">
@@ -99,6 +125,23 @@
   </footer>
     
     <script>
+    // Funksjoner for å endre ansatte
+    function promptAddAnsatt(){
+      var nyttNavn = prompt("Hva heter den nye ansatte?");
+      var nyRestaurant = prompt("Hvilken restaurant jobber han/hun på? (Sørenga, Frogner, Aker Brygge, Helsfyr)");
+      var nyStilling = prompt("Hvilken stilling har den nye ansatte?")
+      alert("Ny ansatt er lagt til: Navn: "+ nyttNavn + "  Restaurant: "+ nyRestaurant + "  Stilling: " + nyStilling);
+    }
+    function promptEndreAnsatt(){
+      var gammeltNavn = prompt("Hva heter den ansatte du vil endre?")
+      var nyStilling = prompt("Hvilken ny stilling får den ansatte?")
+      var nyRestaurant = prompt("Hvilken restaurant skal han/hun jobbe på?")
+      alert("Du har nå endret ansatte: " + gammeltNavn + ". Ny restaurant: " + nyRestaurant + ". Ny stilling til ansatte: " + nyStilling);
+    }
+    function promptSlettAnsatt(){
+      var navnTilAnsatt = prompt("Hva heter den ansatte du vil slette?")
+      alert(navnTilAnsatt + ". Har nå blitt slettet")
+    }
     // ansatte array
     var ansatte = [
         {Bilde:"<img src=images/lauritz.jpg width=150>", Navn:"Lauritz", Stilling:"RestaurantSjef", Restaurant:"Sorenga"},
@@ -125,6 +168,7 @@
     ]
     // Funksjon for å printe ut alle ansatte
     function printAlleAnsatte(){
+      resultat.innerHTML = " ";
       for (i = 0; i < ansatte.length; i++){ 
         resultat.innerHTML +=`<hr> Navn: ${ansatte[i].Navn} <br> Stilling: ${ansatte[i].Stilling} <br> Restaurant: ${ansatte[i].Restaurant}  <br>  ${ansatte[i].Bilde} <br> <br> <hr>`;
       }

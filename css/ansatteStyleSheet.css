@@ -1,11 +1,21 @@
+body{
+    background-color: #fff8cd;
+}
+
+#activeNav {
+   background-color: #fff8cd;
+}
+
 .footer{
     background-color: #ffe05d;
     background-image: url(../images/pizzaLogo.png);
 }
+
 h1,h2,h3,h4,h5,h6, p{
     color: #646464;
 }
 
-#activeNav {
-    background-color: #fff8cd;
+.active .navbar-item:hover {
+   background-color: #666;
+   color: white;  
 }

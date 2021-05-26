@@ -1,5 +1,5 @@
 body {
-    background-color: #ffe05d;
+    background-color: #fff8cd;
 }
 
 #activeNav {
@@ -7,37 +7,25 @@ body {
 }
 
 #section1 {
-    border-style: solid;
-    border-color: #ff9642;
-    background-color: #fff8cd;
     margin: 20px;
 }
 
 #section2 {
-    border-style: solid;
-    border-color: #ff9642;
-    background-color: #fff8cd;
     margin: 20px;
 }
 
 #section3 {
-    border-style: solid;
-    border-color: #ff9642;
-    background-color: #fff8cd;
     margin: 20px;
 }
 
 #section4{
-    border-style: solid;
-    border-color: #ff9642;
-    background-color: #fff8cd;
     margin: 20px;
 }
 
 #imgBox {
     background: url("../images/pizzaResturantExterior1.jpg") no-repeat;  
     border-style: solid;
-    border-color: #ff9642;
+    border-color: black;
     background-size: 100% 100%;
     transition: 0.8s;
 }
@@ -53,7 +41,7 @@ body {
     background: url("../images/pizzaResturantExterior2.jpeg") no-repeat;
     background-size: 100% 100%;
     border-style: solid;
-    border-color: #ff9642;
+    border-color: black;
     transition: 0.8s;
 
     
@@ -66,9 +54,9 @@ body {
 
 #imgBox3 {
     background: url("../images/pizzaResturantExterior3.jpg") no-repeat;
-    border-style: solid;
-    border-color: #ff9642;
     background-size: 100% 100%;
+    border-style: solid;
+    border-color: black;
     transition: 0.8s;
 }
 #imgBox3:hover {
@@ -79,9 +67,9 @@ body {
 
 #imgBox4 {
     background: url("../images/pizzaResturantExterior4.jpg") no-repeat;
-    border-style: solid;
-    border-color: #ff9642;
     background-size: 100% 100%;
+    border-style: solid;
+    border-color: black;
     transition: 0.8s;
     
 }
