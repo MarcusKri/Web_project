@@ -211,9 +211,6 @@
 
         function allStorage() {
 
-
-            
-
             for (let d = 0; d < localStorage.length; d++) {
                 j = j+1;
                 if(j == 6){
@@ -236,17 +233,14 @@
                 
                 document.getElementById(j).innerHTML+= "<strong>"+`Subtotal: ` + total + "</strong><br><br><br><br><br>"
                 var f = products.indexOf(receipt[d]);
-               // console.log(receipt);
                 
                 
             };
 
-            for (let x = 0; x < products.length; x++) {
-                console.log("hva skjer"+alleSalg)
-                    
-                    document.getElementById("salgsOversikt").innerHTML+= "<br><tr><td>"+ products[x].vare+"</td><td>" + getOccurrence(alleSalg, products[x].vare) + "</td><td>" + getOccurrence(alleSalg, products[x].vare)*products[x].pris + "</td>"
-                    
-                };
+
+            
+
+            
 
 
 
@@ -261,6 +255,15 @@
             array.forEach((v) => (v === value && count++));
             return count;
         };
+
+        function alleSalg(){
+            for (let x = 0; x < products.length; x++) {
+                console.log("hva skjer"+alleSalg)
+                    
+                    document.getElementById("salgsOversikt").innerHTML+= "<br><tr><td>"+ products[x].vare+"</td><td>" + getOccurrence(alleSalg, products[x].vare) + "</td><td>" + getOccurrence(alleSalg, products[x].vare)*products[x].pris + "</td>"
+                    
+            };
+        }
         
     </script>
 </body>
