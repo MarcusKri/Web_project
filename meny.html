@@ -113,6 +113,7 @@
 
     <script>
         var shoppingCart = []
+        
 
         function myStoageFunction(k){
             console.log(k);
@@ -121,10 +122,24 @@
             console.log(shoppingCart);
 
         };
+
+        if(localStorage.getItem("g")===null){
+            parseInt(localStorage.setItem("g", -1));
+        };
+        var f = -1
         var p = -1;
+        if(localStorage.getItem("g")!==-1){
+            f = parseInt(localStorage.getItem("g"));
+        };
+
+        
+
         function sendData(){
             p = p+1;
-            localStorage.setItem(p, JSON.stringify(shoppingCart))
+            f = f+1;
+            parseInt(localStorage.setItem("g", f));
+            console.log(localStorage.getItem("g"));
+            localStorage.setItem(f, JSON.stringify(shoppingCart))
             console.log(JSON.parse(localStorage.getItem(p)));
             shoppingCart = [];
 
