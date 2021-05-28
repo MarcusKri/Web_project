@@ -144,7 +144,9 @@
             localStorage.setItem(f, JSON.stringify(shoppingCart))
             console.log(JSON.parse(localStorage.getItem(p)));
             shoppingCart = [];
-
+            
+            /* alert når man trykker på "fullfør" knappen*/
+            alert("Bestillingen er sendt inn. Gå til salg siden for kvittering.");
         }
 
         /* FRONTEND PROMPTS */
@@ -160,7 +162,7 @@
         function promptAdd(){
             var item = prompt("Hvilke produkt ønsker du å legge til?")
             var kategori = prompt("Er det drikke eller pizza?")
-            var price = prompt("Hvilke pris skal " + item + " ha.")
+            var price = prompt("Hvilke pris skal " + item + " ha?")
             alert( item + " er lagt til i kategorien " + "'" + kategori + "'" + " og har prisen: " + price + "kr")
         }
     </script>
