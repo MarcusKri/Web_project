@@ -39,10 +39,7 @@
         </div>
     </nav>
     <br><br><br>
-    <label for="Kvittering">Velg varer</label>
-    <select name="velgVarer" id="velgVarer"></select>
-    <input type="button" onclick="printReceipt()"/>
-    <input type="button" onclick="allStorage()"/>
+
     <p id="output"></p>
 
 
@@ -67,7 +64,7 @@
     <table style="width:100%" id="salgsOversikt">
         <tr>
           <th>Produkt</th>
-          <th>Antall</th>
+          <th>Antall solgt</th>
           <th>Totalverdi</th>
         </tr>
       </table>
@@ -206,10 +203,23 @@
 
         var totalTotal = 0;
         var alleSalg = [];
+        var x = 0;
+        var totalSalg = 0;
+
+        function printSalg(){
+            for (var x = 0; x < products.length; x++) {
+                console.log(totalTotal)
+   
+                document.getElementById("salgsOversikt").innerHTML+= "<br><tr><td>"+ products[x].vare+"</td><td>" + getOccurrence(alleSalg, products[x].vare) + "</td><td>" + getOccurrence(alleSalg, products[x].vare)*products[x].pris + "</td>"
+                    
+            };
+            
+            document.getElementById("salgsOversikt").innerHTML+= "<br><br><tr><td><strong>Totalinntekt:</strong> </td><td></td><td><strong>"+ totalTotal+"</strong></td>"
+        }
 
 
 
-        function allStorage() {
+       // function allStorage() {
 
             for (let d = 0; d < localStorage.length; d++) {
                 j = j+1;
@@ -219,24 +229,35 @@
                 
                 var total = 0;
                 var receipt = JSON.parse(localStorage.getItem(d));
+                if (receipt === null){
+                    console.log("balle")
+                    printSalg()
+                }
                 for (let t = 0; t < receipt.length; t++) {
                     
                     total = total + products[receipt[t]].pris;
                     totalTotal = totalTotal + products[receipt[t]].pris;;
 
                     alleSalg.push(products[receipt[t]].vare);
-                    //console.log(alleSalg);
+                    console.log(alleSalg);
                     document.getElementById(j).innerHTML+= "<p>"+ products[receipt[t]].vare + `: `+ products[receipt[t]].pris + "</p><br>";
+                    
                     
                 };
                 
+                
+            
                 
                 document.getElementById(j).innerHTML+= "<strong>"+`Subtotal: ` + total + "</strong><br><br><br><br><br>"
                 var f = products.indexOf(receipt[d]);
                 
                 
+                
             };
 
+            
+           
+
 
             
 
@@ -247,7 +268,9 @@
 
 
 
-        };
+      //  };
+
+        
 
 
         function getOccurrence(array, value) {
@@ -256,14 +279,7 @@
             return count;
         };
 
-        function alleSalg(){
-            for (let x = 0; x < products.length; x++) {
-                console.log("hva skjer"+alleSalg)
-                    
-                    document.getElementById("salgsOversikt").innerHTML+= "<br><tr><td>"+ products[x].vare+"</td><td>" + getOccurrence(alleSalg, products[x].vare) + "</td><td>" + getOccurrence(alleSalg, products[x].vare)*products[x].pris + "</td>"
-                    
-            };
-        }
+        
         
     </script>
 </body>
