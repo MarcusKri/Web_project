@@ -3,7 +3,6 @@
 <head> 
     <title>Salg</title>
     <meta charset="utf-8">
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
@@ -56,6 +55,7 @@
             <div class="column is-2.4" id="4">
             </div>
             <div class="column is-2.4" id="5">
+            </div>
             </div>                   
         </div>
     </section>
@@ -229,9 +229,8 @@
                 
                 var total = 0;
                 var receipt = JSON.parse(localStorage.getItem(d));
-                document.getElementById(j).innerHTML+="<strong> KvitteringsID: "+(d+1);
+                
                 if (receipt === null){
-                    console.log("balle")
                     printSalg()
                 }
                 for (let t = 0; t < receipt.length; t++) {
@@ -249,7 +248,8 @@
                 
             
                 
-                document.getElementById(j).innerHTML+= "<strong>"+`Subtotal: ` + total + "</strong><br><br><br><br><br>"
+                document.getElementById(j).innerHTML+= "<strong>"+`Subtotal: ` + total + "</strong><br>"
+                document.getElementById(j).innerHTML+="<strong> KvitteringsID: "+(d+1);+"<br><br><br><br><br>"
                 var f = products.indexOf(receipt[d]);
                 
                 
