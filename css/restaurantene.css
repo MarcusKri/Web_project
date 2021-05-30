@@ -22,6 +22,10 @@ body {
     margin: 20px;
 }
 
+#seksjonButton{
+    left: 40%;
+}
+
 #imgBox {
     background: url("../images/pizzaResturantExterior1.jpg") no-repeat;  
     border-style: solid;
