@@ -1,0 +1,865 @@
+commit 2ad046e63be3092434af987ced9565827465def9
+Author: Kasper B <peephyt@gmail.com>
+Date:   Sun May 30 12:04:19 2021 +0200
+
+    Quickfix
+
+commit d83a45bc1c6b71c7a1b8f4ff09e31cfb4faeba08
+Merge: 34ccb52 fb5319a
+Author: SourMaoam <julianhenriksen@hotmail.com>
+Date:   Sun May 30 11:43:57 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit 34ccb52d3fdcc0525c43ad66df4366e8927624b9
+Author: SourMaoam <julianhenriksen@hotmail.com>
+Date:   Sun May 30 11:43:52 2021 +0200
+
+    kvitteringsID
+
+commit fb5319acabfb47a35136f87cc99c11be63683bae
+Merge: ca488d3 a75eb66
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Sun May 30 11:36:52 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit ca488d30e0d415e165c73ea394f35ea3efee2d2c
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Sun May 30 11:36:35 2021 +0200
+
+    slettet navbaronly.html
+
+commit a75eb669bb9cb77b31be64e4ef66cf77cae223fa
+Merge: 239f2b5 f46f88b
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Sun May 30 11:27:50 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt into main
+
+commit 239f2b5236476a67efd6905a93604839c368808c
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Sun May 30 11:27:47 2021 +0200
+
+    deleted a html
+
+commit f46f88ba35c1e447ff88e69174eac4bdc603b69e
+Merge: 6914126 65a3fac
+Author: Kasper B <peephyt@gmail.com>
+Date:   Sun May 30 11:23:16 2021 +0200
+
+    Merge branch 'main' of https://github.com/Vanillacoke-web/Webprosjekt
+
+commit 6914126c6eb72347d004e2216b5a126030bf882a
+Author: Kasper B <peephyt@gmail.com>
+Date:   Sun May 30 11:23:12 2021 +0200
+
+    fikset alternativ tekst
+
+commit 65a3facfea934a382fa051a6d57e2a16eccdb081
+Merge: 8b38ecc 31b8699
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Sat May 29 20:47:16 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit 8b38eccb062e7a0734af201e9a3b06baf6eaefcd
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Sat May 29 20:37:52 2021 +0200
+
+    ...
+
+commit 31b86990bc8a5a8b7cbd81fb0644ae5b886b4c31
+Author: SourMaoam <julianhenriksen@hotmail.com>
+Date:   Sat May 29 19:35:57 2021 +0200
+
+    oversikt ferdig
+
+commit 0b76460306888a630e4d4392711135f26b8fb326
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Fri May 28 10:46:41 2021 +0200
+
+    background farge salg siden
+
+commit cef83cbc328c4bd0ab85a0b08eae66ef2772e40f
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Fri May 28 10:43:56 2021 +0200
+
+    alert på fullfør knappen
+
+commit 2b30281d0c22fd39ab9bb9db4e86b763dd4e20b6
+Author: SourMaoam <julianhenriksen@hotmail.com>
+Date:   Wed May 26 16:45:54 2021 +0200
+
+    sliter
+
+commit d188c8529822db9849d4f73f4b086efb5765e6ee
+Merge: 6aee8b8 dbc045d
+Author: SourMaoam <julianhenriksen@hotmail.com>
+Date:   Wed May 26 16:17:29 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit 6aee8b8ecad37e338eeeed4490e9c1a6adcd5093
+Author: SourMaoam <julianhenriksen@hotmail.com>
+Date:   Wed May 26 16:17:23 2021 +0200
+
+    salgsoversikt
+
+commit dbc045d83270293cbdb2ac8d1168c8de6cc57141
+Merge: 2a0b900 97a0d49
+Author: Kasper B <peephyt@gmail.com>
+Date:   Tue May 25 17:16:30 2021 +0200
+
+    Merge branch 'main' of https://github.com/Vanillacoke-web/Webprosjekt
+
+commit 2a0b90096dc06209f97fdb34b2aca2f83d652657
+Author: Kasper B <peephyt@gmail.com>
+Date:   Tue May 25 17:15:09 2021 +0200
+
+    fikset ferdig siden nesten
+
+commit 97a0d49fce317c04f7791dafbe84e1706bf4bc2d
+Merge: ed4762b bedfc1a
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Tue May 25 12:54:14 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit ed4762b7e22efca99a77590935494d232f500ab4
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Tue May 25 12:54:06 2021 +0200
+
+    fikset favicon
+
+commit bedfc1a5e02a61acd461ebf3abf7b08adeb3316f
+Merge: 59f5c41 696671e
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Tue May 25 12:51:18 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt into main
+
+commit 59f5c41c32b2ce752cd384ce2eb95acad0526c7b
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Tue May 25 12:49:42 2021 +0200
+
+    Border commit
+
+commit 696671ec3aff03250d29a757ee05d1b37e909db6
+Merge: 9aa11c2 320b220
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Tue May 25 12:46:06 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit 9aa11c2ab8adf58ad61c0d9fc370a26f3afbef9d
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Tue May 25 12:45:59 2021 +0200
+
+    fixy fix fix
+
+commit 320b220b06ab472da553a12407b8552c22b7ca14
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Tue May 25 12:43:38 2021 +0200
+
+    Restaurant navn endring
+
+commit 41499786c1425d4163177a8fc56b27c25823785b
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Tue May 25 12:42:58 2021 +0200
+
+    Restaurant navn endring
+
+commit 0458131cfc92969df2acacfadcf3ea918769a875
+Merge: b192824 5a24403
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Tue May 25 12:34:03 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt into main
+
+commit b1928245cdc94bfdf508436f4a0767e1311f6081
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Tue May 25 12:33:59 2021 +0200
+
+    Navbar salg og resturant commit
+
+commit 5a244032ac2f89d8447afbe4bd0c82d26fa4cabb
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Tue May 25 12:30:56 2021 +0200
+
+    meny
+
+commit e8dbf74c2fe4f9e76331a37a7e4bbfaabeb75d1e
+Merge: 43b0289 36caf10
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Tue May 25 12:20:02 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt into main
+
+commit 43b0289a0905060ae65fbd328c1b31ccbda094d2
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Tue May 25 12:19:56 2021 +0200
+
+    Active Nav Commit
+
+commit 87e522be63f1303eac98361ea4ddca32ddb42c14
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Tue May 25 12:17:18 2021 +0200
+
+    Resturant Commit
+
+commit 36caf10c3293022ea2d710156dad2b71309ae8d5
+Author: Kasper B <peephyt@gmail.com>
+Date:   Tue May 25 12:13:24 2021 +0200
+
+    endret smpting
+
+commit 6cdb623283bec1f5350650c8777b4568fd68c91a
+Merge: 0eb2a88 d9ea1c8
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Tue May 25 12:09:23 2021 +0200
+
+    Merge branches 'main' and 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit d9ea1c80117f1a1806a4e91eea2183af98162c3f
+Merge: ca76379 ddd42fc
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Tue May 25 12:07:36 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt into main
+
+commit ca76379a06190ee52375cbd51dc57f01c57e5c68
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Tue May 25 12:06:41 2021 +0200
+
+    Resturant
+
+commit ddd42fce0e5c37a15fe82e5cb4bf1ee0bb9de7b5
+Merge: 00b2a98 495cf4c
+Author: Kasper B <peephyt@gmail.com>
+Date:   Tue May 25 12:05:41 2021 +0200
+
+    Merge branch 'main' of https://github.com/Vanillacoke-web/Webprosjekt
+
+commit 00b2a988d00e8a66dafe11418724b1a3d4d4589f
+Author: Kasper B <peephyt@gmail.com>
+Date:   Tue May 25 12:05:35 2021 +0200
+
+    Fikset så det er mulig å søke
+
+commit 0eb2a88456e3d9add0f7ef4fdb9f0f1f0d75ff96
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Tue May 25 12:05:28 2021 +0200
+
+    meny gang shit skrrrt
+
+commit 495cf4c1909255557d1d37fbbeffc6ffe8c91b5c
+Author: lauritznor <lauritz-1999@live.com>
+Date:   Tue May 25 11:59:52 2021 +0200
+
+    div
+
+commit 5003e177d4e9a655d1b383a6e631552de71d38b5
+Merge: c1aae41 402a0d2
+Author: lauritznor <lauritz-1999@live.com>
+Date:   Tue May 25 11:59:02 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit c1aae4152fb5737ef19156b497d8b213f9f03cf8
+Author: lauritznor <lauritz-1999@live.com>
+Date:   Tue May 25 11:58:51 2021 +0200
+
+    oversetter
+
+commit 402a0d22ab9cad46ff90dc57cf6f7b5f0a616bcc
+Merge: f2ca11b dafe61c
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Tue May 25 11:58:36 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit f2ca11bee4ef1000713bbd2ac57138fb55b11477
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Tue May 25 11:58:29 2021 +0200
+
+    meny fikset
+
+commit dafe61c007db99f4dc5fa2a6b7d6cab995ba2999
+Author: lauritznor <lauritz-1999@live.com>
+Date:   Tue May 25 11:53:15 2021 +0200
+
+    fiks div
+
+commit ef6f94983ab34c467df8f6d5eebcc4a88869d260
+Author: lauritznor <lauritz-1999@live.com>
+Date:   Tue May 25 11:52:29 2021 +0200
+
+    Oversetter
+
+commit 0d8e905a3e2f6dd205a515bb1b2f5911945926a0
+Author: lauritznor <lauritz-1999@live.com>
+Date:   Tue May 25 11:47:04 2021 +0200
+
+    Skrivefeil
+
+commit 818be3ab7ee52f734299711d61e397ee1d48370b
+Author: lauritznor <lauritz-1999@live.com>
+Date:   Tue May 25 11:46:33 2021 +0200
+
+    Oversetter
+
+commit d0f78aef427ae7db23f99332b8dbe8c6df08f514
+Author: lauritznor <lauritz-1999@live.com>
+Date:   Tue May 25 11:42:44 2021 +0200
+
+    Skrivefeil
+
+commit 19df54a295f125017e193d49238113b6520f10cc
+Author: lauritznor <lauritz-1999@live.com>
+Date:   Tue May 25 11:41:46 2021 +0200
+
+    Oversetter tekst til norsk
+
+commit 8f34fa1aed17a5fdc72a2f57435b452bc8dd2164
+Merge: f158a52 297022a
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Tue May 25 11:36:33 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit f158a52d7c771c3d023f6be521f23d6d28f08a47
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Tue May 25 11:34:45 2021 +0200
+
+    fikset index og meny
+
+commit 297022a5b95fa8306b8e22059d350baadefdb243
+Merge: a967853 2729b27
+Author: Kasper B <peephyt@gmail.com>
+Date:   Tue May 25 11:32:11 2021 +0200
+
+    Merge branch 'main' of https://github.com/Vanillacoke-web/Webprosjekt
+
+commit a96785334455e6cf38b0106757cbe183d1865fb6
+Merge: 133c2fc b196017
+Author: Kasper B <peephyt@gmail.com>
+Date:   Tue May 25 11:32:05 2021 +0200
+
+    Merge branch 'main' of https://github.com/Vanillacoke-web/Webprosjekt
+
+commit 2729b271cd88ffe0976d08aa6644ab3875825d37
+Merge: c4244c0 b196017
+Author: lauritznor <lauritz-1999@live.com>
+Date:   Tue May 25 11:30:46 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit 133c2fcc29096f4862c64156b26f6de4434c10fd
+Author: Kasper B <peephyt@gmail.com>
+Date:   Tue May 25 11:30:34 2021 +0200
+
+    LAgt til foooter
+
+commit c4244c0debb05b9675aac7cd3b0cd124ad0e8808
+Merge: aa1ba02 f59a243
+Author: lauritznor <lauritz-1999@live.com>
+Date:   Tue May 25 11:30:30 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit 8ae3314c18d4dd40e6e5ed8af941f787f13795fa
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Mon May 24 15:40:09 2021 +0200
+
+    Marcus Commit
+
+commit b19601733e4c33c60cd3bdb73db3ecb71be955d0
+Merge: 81b685f ef751bb
+Author: sourmaoam <julianhenriksen@hotmail.com>
+Date:   Mon May 24 15:39:04 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit 81b685fde8fec34107cfc2561ab364ff982137e1
+Author: sourmaoam <julianhenriksen@hotmail.com>
+Date:   Mon May 24 15:38:59 2021 +0200
+
+    teamwork
+
+commit ef751bb7d7ff606479fa0879478f0f039bca3a77
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Mon May 24 15:24:46 2021 +0200
+
+    footer
+
+commit 478caeaa29de1cd6c0b269b8de25d6954d5e6e2b
+Merge: 9303881 bd52e92
+Author: Kasper B <peephyt@gmail.com>
+Date:   Mon May 24 15:21:53 2021 +0200
+
+    Merge branch 'main' of https://github.com/Vanillacoke-web/Webprosjekt
+
+commit 93038810ecfdf954201b5fd9aefce0051bcf2e6d
+Author: Kasper B <peephyt@gmail.com>
+Date:   Mon May 24 15:21:49 2021 +0200
+
+    Lagt til bilde og footer på ansatt siden
+
+commit bd52e92ed323651700ea923d13a66efab9961962
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Mon May 24 15:06:26 2021 +0200
+
+    Resturantene commit
+
+commit 99f653be952e46cc610a8956d0a0f96fd8042e62
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Mon May 24 15:04:16 2021 +0200
+
+    Resturantene commit
+
+commit efeb180c96a03f7284f127801bdd08f4a4b1a102
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Mon May 24 14:59:10 2021 +0200
+
+    Restaurante Commit
+
+commit 9476afa0730fc9d9c95ab0d16f6fd2abf23014f8
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Mon May 24 14:55:59 2021 +0200
+
+    Restaurante Commit
+
+commit 201a521b49a3c2e0e4f207824d9d8a2eafeabf90
+Merge: f529f06 c079b6f
+Author: Kasper B <peephyt@gmail.com>
+Date:   Mon May 24 14:10:25 2021 +0200
+
+    Merge branch 'main' of https://github.com/Vanillacoke-web/Webprosjekt
+
+commit f529f06b169e7792bf2fc2ef91d2f0a28bdb881b
+Author: Kasper B <peephyt@gmail.com>
+Date:   Mon May 24 14:10:19 2021 +0200
+
+    Lagd filter til ansatte
+
+commit c079b6f7102c9e6f028675d45d57db73efd85e71
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Mon May 24 14:06:14 2021 +0200
+
+    fjernet "k"
+
+commit aa1ba028a57a2ce3d7604a82cc095b3c9ae4d961
+Author: lauritznor <lauritz-1999@live.com>
+Date:   Mon May 24 14:03:01 2021 +0200
+
+    Legger til funksjonsnavn
+
+commit f59a24340cde161605fa13e8273ebb008c05980e
+Merge: 3500d21 387c566
+Author: sourmaoam <julianhenriksen@hotmail.com>
+Date:   Mon May 24 14:01:52 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit 3500d21017a2a0340ad06c5892e819ad3fef7795
+Author: sourmaoam <julianhenriksen@hotmail.com>
+Date:   Mon May 24 14:01:48 2021 +0200
+
+    update
+
+commit 387c566bf9390afb57cf7f103a8369c44c008008
+Merge: 49a6b93 b878147
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Mon May 24 14:00:24 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit 49a6b93eb4350e380043201e0e0315ec11a066fb
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Mon May 24 14:00:17 2021 +0200
+
+    ubiohoihoijo
+
+commit b8781472cbfaf8e377e3445c9f75df3f0fccc87c
+Merge: 27a4d6b 6d7869a
+Author: sourmaoam <julianhenriksen@hotmail.com>
+Date:   Mon May 24 13:38:20 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit 27a4d6b6b4dc30b3a56cd934be36f22018cf3c18
+Author: sourmaoam <julianhenriksen@hotmail.com>
+Date:   Mon May 24 13:34:35 2021 +0200
+
+    oppdatering salg
+
+commit 6d7869a8ec706a9a7e1881c8df6f9d2b35e04c74
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Mon May 24 13:34:14 2021 +0200
+
+    push
+
+commit 79cdb3049009524a3d1e7a5b97b097b002cd702e
+Merge: d49db3b d2dacfb
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Mon May 24 13:18:18 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit d49db3be4087ee5755012cd12fddd6450564ecbb
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Mon May 24 13:16:16 2021 +0200
+
+    mye frem og tilbake her ja
+
+commit d2dacfb6e2630f39fad2f51c55163f75e73e3260
+Merge: 15d7f86 d640e5d
+Author: Kasper B <peephyt@gmail.com>
+Date:   Mon May 24 10:34:44 2021 +0200
+
+    Merge branch 'main' of https://github.com/Vanillacoke-web/Webprosjekt
+
+commit 15d7f862480f6052c4bed82e2e8299c3f43441de
+Author: Kasper B <peephyt@gmail.com>
+Date:   Mon May 24 10:34:15 2021 +0200
+
+    jobbet med ansatte
+
+commit d640e5d5cfac271a556bf599821fc9fbe72676e7
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Sun May 23 14:47:55 2021 +0200
+
+    ting
+
+commit 57f59dd95fc6ba673b494b09feb3d9810e0d2d47
+Merge: ae83105 8ae0706
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Fri May 21 20:14:50 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt into main
+
+commit ae83105a62afc87df990d938a5f4a711e4d87d96
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Fri May 21 20:14:46 2021 +0200
+
+    Resturant commit
+
+commit bed52bc2ae9ba419a6288bdb9b109a8970f3ddc0
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Fri May 21 20:14:33 2021 +0200
+
+    Resturant commit
+
+commit 8ae07066b6e5116ebc197bc0257906746fac546e
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Fri May 21 16:26:46 2021 +0200
+
+    ting
+
+commit 976ea0ff67c5bfaf96d9565fdd1f5767f994fcfb
+Merge: 56d8db0 21919ff
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Fri May 21 14:07:04 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit 56d8db0050a6cb7f6a72b756e784853009385539
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Fri May 21 14:06:57 2021 +0200
+
+    bilder++ endringer
+
+commit 21919ff3bce29e641887b9cf4a5f927e23ee9235
+Merge: 0ad9dd8 c3d5418
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Thu May 20 16:00:08 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt into main
+
+commit 0ad9dd89df7e291578de84f7e0f7502574bd258f
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Thu May 20 16:00:04 2021 +0200
+
+    Resturante commit
+
+commit c3d541822d50af8addb033aa564611b9efe03278
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Thu May 20 15:57:02 2021 +0200
+
+    FIX
+
+commit 8c6a88f2151fcba23331f095c4fbe3b183ab1325
+Author: sourmaoam <julianhenriksen@hotmail.com>
+Date:   Thu May 20 15:56:09 2021 +0200
+
+    ferdig for dagen
+
+commit 4e877908de2a0677f6718860de20418d66029ed9
+Merge: 0409b69 ee04c58
+Author: Kasper B <peephyt@gmail.com>
+Date:   Thu May 20 15:55:13 2021 +0200
+
+    Merge branch 'main' of https://github.com/Vanillacoke-web/Webprosjekt
+
+commit 0409b6912f85743d1a78d57c9a8020bc6557e585
+Author: Kasper B <peephyt@gmail.com>
+Date:   Thu May 20 15:54:57 2021 +0200
+
+    Lagt inn array med ansatte.
+
+commit ee04c580617349bf998176a425350dca455e61d1
+Merge: 71aad28 38ec7a3
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Thu May 20 15:32:44 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit 71aad281a8852800d5e8ebae289c14b0106c2f79
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Thu May 20 15:32:38 2021 +0200
+
+    fikset litt + endret noen filer
+
+commit 38ec7a34421e51299b46e3842f8182b12d66b93d
+Merge: 022e4c8 469118f
+Author: sourmaoam <julianhenriksen@hotmail.com>
+Date:   Thu May 20 15:20:38 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit 022e4c81b0be2b3dd20bf207d7728fa86e261d84
+Author: sourmaoam <julianhenriksen@hotmail.com>
+Date:   Thu May 20 15:20:34 2021 +0200
+
+    kvitteringscript progress
+
+commit 469118f60740c44be9d7ce21908599d8c6db70df
+Merge: c7bcfcd bd75c43
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Thu May 20 14:32:08 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt into main
+
+commit c7bcfcd13b89d01c0d222a440f1df4aa84f8fde5
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Thu May 20 14:30:50 2021 +0200
+
+    resturante commit
+
+commit bd75c433cf933fe2a59904d93acb570a6ad86f34
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Thu May 20 13:35:07 2021 +0200
+
+    last ned navbar på nytt for nyeste versjon
+
+commit 8813f78c9ca73906b9c729faacda1005e02f0e84
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Thu May 20 13:01:02 2021 +0200
+
+    css
+
+commit b24b96ab03e1cc8c687c51f3c8d03000ad9a6626
+Merge: e8e00ad d70291f
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Thu May 20 12:59:54 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit e8e00adc3f0d69e86f9e738f08f6de847a3549b2
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Thu May 20 12:59:47 2021 +0200
+
+    laget css mappe og scripts mappe
+
+commit d70291f56960000f3a9becc36a771de436d401a4
+Author: Kasper B <peephyt@gmail.com>
+Date:   Thu May 20 12:56:42 2021 +0200
+
+    Lagt til
+
+commit d60b71cbedc1a36dd44a123489557d67e2a1d63e
+Author: sourmaoam <julianhenriksen@hotmail.com>
+Date:   Thu May 20 12:40:46 2021 +0200
+
+    array
+
+commit b37722cd4e9fb4ef9492aa58fd748e5037f9a1dd
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Thu May 20 12:34:27 2021 +0200
+
+    Fikset fixed nav
+
+commit 16cc082a6fdb9dd6775786c39e510d0a6af4b93e
+Author: lauritznor <lauritz-1999@live.com>
+Date:   Thu May 20 12:20:41 2021 +0200
+
+    Endret linje 80
+
+commit 37d7c45481552b509c5502000e93c5ea70f10e0c
+Merge: 8cccca7 64893fa
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Thu May 20 12:17:45 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt into main
+
+commit 8cccca785496b64645c0d49b6e2de6e9049e1bea
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Thu May 20 12:17:40 2021 +0200
+
+    pizzaResturante
+
+commit 64893fa2fd2b203ca256e9498f19d441333826a9
+Merge: 854295b e75c67e
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Thu May 20 11:48:34 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit 854295b562e7f72870c5b04101b7c8000a2dd43f
+Author: Henrik Angelskår <hean025@EGMS.no>
+Date:   Thu May 20 11:48:19 2021 +0200
+
+    navbar + laget meny.html
+
+commit e75c67e654f767ef66bceb2573150cf1f4787d19
+Author: sourmaoam <julianhenriksen@hotmail.com>
+Date:   Thu May 20 11:33:13 2021 +0200
+
+    script progress
+
+commit 9b77e845c216c1b5cd9559ec11880bb1be7ed787
+Author: sourmaoam <julianhenriksen@hotmail.com>
+Date:   Wed May 19 15:44:05 2021 +0200
+
+    keegt
+
+commit c345da7f9a751529bd8713f1ef8137478a447ba1
+Merge: ae022aa d7a7230
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Wed May 19 15:33:26 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt into main
+
+commit ae022aa692a0a3df1a958396fc205fa8f336071e
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Wed May 19 15:33:17 2021 +0200
+
+    nabfngjoadsx
+
+commit e10ad07c27671a7bfd9fa697ea701d5bf086c2ac
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Wed May 19 15:30:53 2021 +0200
+
+    jaah
+
+commit b2d1ac91ec849c39f0730e647f4b142a0d21c325
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Wed May 19 15:29:56 2021 +0200
+
+    pizzaResturantPictures
+
+commit d7a7230e24d2eb369b8b2f10767cc0ac8b27b70f
+Author: sourmaoam <julianhenriksen@hotmail.com>
+Date:   Wed May 19 15:29:06 2021 +0200
+
+    kvittering test
+
+commit cb0b2b7398a3eb8c62c3c2ce6061d0b513ac00f4
+Merge: 3cd9662 f816186
+Author: sourmaoam <julianhenriksen@hotmail.com>
+Date:   Wed May 19 15:19:41 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit f816186515a735291bc32c569a4bbaecfd36f483
+Merge: 865fedd 97b8ee8
+Author: Kasper B <peephyt@gmail.com>
+Date:   Wed May 19 15:18:38 2021 +0200
+
+    Merge branch 'main' of https://github.com/Vanillacoke-web/Webprosjekt
+
+commit 3cd966214b33d47e171b535b2c492341a20e27c7
+Author: sourmaoam <julianhenriksen@hotmail.com>
+Date:   Wed May 19 15:18:35 2021 +0200
+
+    salg
+
+commit 865fedd576a28149b220d9c40a6f97bfe61c7f15
+Author: Kasper B <peephyt@gmail.com>
+Date:   Wed May 19 15:18:30 2021 +0200
+
+    Laget en ny html fil
+
+commit 97b8ee8ecfb6ccef7020d2cff9e379e0db9107dc
+Merge: 6805f27 5d472d4
+Author: lauritznor <lauritz-1999@live.com>
+Date:   Wed May 19 15:15:11 2021 +0200
+
+    Merge branch 'main' of https://github.com/kasbrudal/Webprosjekt
+
+commit 6805f2734aabb3937371f47d24f6e3804f8d76b7
+Author: lauritznor <lauritz-1999@live.com>
+Date:   Wed May 19 15:13:49 2021 +0200
+
+    test
+
+commit af3cfd49fa6665fe676997b35c80152e43442280
+Author: lauritznor <lauritz-1999@live.com>
+Date:   Wed May 19 15:09:46 2021 +0200
+
+    123123
+
+commit 5d472d41598d4e3564de051ea4043e9b955dd74f
+Author: sourmaoam <julianhenriksen@hotmail.com>
+Date:   Wed May 19 15:08:29 2021 +0200
+
+    test
+
+commit 7818546aeeba9495ae4f1220995f33a2bfd789a5
+Author: kasbrudal <69972678+kasbrudal@users.noreply.github.com>
+Date:   Wed May 19 14:12:17 2021 +0200
+
+    Delete test.txt
+
+commit 61fa8c9dcb9a3e4e561e11beca842b5b2058b973
+Author: kasbrudal <69972678+kasbrudal@users.noreply.github.com>
+Date:   Wed May 19 14:12:04 2021 +0200
+
+    Delete heihei.txt
+
+commit b32f856e0d77acb09e4c62d4319b19f85a53f9f6
+Author: MarcusKri <marcus-kristoffersen@outlook.com>
+Date:   Wed May 19 14:00:51 2021 +0200
+
+    Changed title test
+
+commit 823de724542a89e54404a3c5752a7836e84bb6e2
+Author: MarcusKri <72551700+MarcusKri@users.noreply.github.com>
+Date:   Wed May 19 13:56:51 2021 +0200
+
+    Add files via upload
+
+commit fede3f4c711bfdbe626c04434b3dfa0b289d770b
+Author: Kasper B <peephyt@gmail.com>
+Date:   Wed May 19 13:26:07 2021 +0200
+
+    Lastet opp html
+
+commit f8ec543e2b721f7618ef2e2c32a03fdb2ebe2f4d
+Author: Kasper B <peephyt@gmail.com>
+Date:   Thu Jan 14 12:10:43 2021 +0100
+
+    commit
+
+commit e0b89b8f6bda95740dd2a13070f4daeb95927d5e
+Author: Kasper B <peephyt@gmail.com>
+Date:   Thu Jan 14 12:09:52 2021 +0100
+
+    commit
+
+commit ee8c3ac26c9948588b13d5b66bc9da5e79eee000
+Author: Kasper B <peephyt@gmail.com>
+Date:   Thu Jan 14 11:05:50 2021 +0100
+
+    commit

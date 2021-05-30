@@ -11,9 +11,6 @@ body{
     background-image: url(../images/pizzaLogo.png);
 }
 
-h1,h2,h3,h4,h5,h6, p{
-    color: #646464;
-}
 
 .active .navbar-item:hover {
    background-color: #666;
